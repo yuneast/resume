@@ -5,7 +5,7 @@ const project: IProject.Payload = {
   list: [
     {
       id: 0,
-      title: '가나다콜 신규 서비스 개발',
+      title: '가나다콜 신규 서비스',
       startedAt: '2024-02',
       endedAt: '2024-07',
       where: '가나다콜',
@@ -116,7 +116,7 @@ const project: IProject.Payload = {
 
     {
       id: 4,
-      title: '콘디 신규 서비스 개발',
+      title: '콘디 신규 서비스',
       startedAt: '2022-01',
       endedAt: '2022-06',
       where: '콘디',
@@ -149,7 +149,7 @@ const project: IProject.Payload = {
 
     {
       id: 5,
-      title: '폴리곤 네트워크 디파이팜 개발',
+      title: '폴리곤 네트워크 디파이팜',
       startedAt: '2021-01',
       endedAt: '2021-06',
       where: '뉴소프트',
@@ -169,7 +169,7 @@ const project: IProject.Payload = {
 
     {
       id: 6,
-      title: '네이버 밴드 글쓰기 프로그램 개발',
+      title: '네이버 밴드 글쓰기 프로그램',
       startedAt: '2020-01',
       endedAt: '2020-06',
       where: '뉴소프트',

@@ -64,7 +64,7 @@ const experience: IExperience.Payload = {
         '페이스북 그룹 내 자동 홍보 매크로 개발',
         '네이버 밴드 내 자동 글쓰기 프로그램 개발',
         '외주 사이트의 쿼리 성능 최적화',
-        'Solidity를 사용한 스마트 컨트랙트 개발',
+        '폴리곤 메틱 네트워크 스마트 컨트랙트 개발',
       ],
       skillKeywords: ['C#', 'PHP', 'Python', 'Solidity', 'Go', 'Web3.js', 'JavaScript', 'MySQL'],
     },
