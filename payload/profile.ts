@@ -34,7 +34,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '커피챗을 좋아합니다. 언제든 편하게 대화해요! ☕',
+    title: '',
     icon: faBell,
   },
 };
