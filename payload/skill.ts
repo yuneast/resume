@@ -1,193 +1,86 @@
 import { ISkill } from '../component/skill/ISkill';
 
+// 기술 스택을 명확하게 분류하고, 각 카테고리의 주요 기술만 포함하도록 정리했습니다.
 const programmingLanguages: ISkill.Skill = {
   id: 0,
   category: 'Programming Languages',
   items: [
-    {
-      id: 0,
-      title: 'Python',
-    },
-    {
-      id: 1,
-      title: 'PHP',
-    },
-
-    {
-      id: 2,
-      title: 'C#',
-    },
-
-    {
-      id: 3,
-      title: 'TypeScript',
-    },
-
-    {
-      id: 4,
-      title: 'JavaScript',
-    },
-
-    {
-      id: 5,
-      title: 'Go',
-    },
-
-    {
-      id: 6,
-      title: 'Dart',
-    },
+    { id: 1, title: 'Python' },
+    { id: 2, title: 'TypeScript' },
+    { id: 3, title: 'JavaScript' },
+    { id: 4, title: 'Dart' },
+    { id: 5, title: 'PHP' },
+    { id: 6, title: 'C#' },
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
+const frameworks: ISkill.Skill = {
   id: 1,
-  category: 'Kernel Development',
+  category: 'Frameworks & Libraries',
   items: [
-    {
-      id: 0,
-      title: 'FastAPI',
-    },
-    {
-      id: 1,
-      title: 'Django',
-    },
-    {
-      id: 2,
-      title: 'Node.js',
-    },
-    {
-      id: 3,
-      title: 'Nextjs',
-    },
-    {
-      id: 4,
-      title: 'React',
-    },
-    {
-      id: 5,
-      title: 'Flutter',
-    },
-    {
-      id: 6,
-      title: 'Laravel',
-    },
-    {
-      id: 7,
-      title: 'Golang',
-    },
+    { id: 1, title: 'FastAPI' },
+    { id: 2, title: 'Django' },
+    { id: 3, title: 'Next.js' },
+    { id: 4, title: 'React' },
+    { id: 5, title: 'Flutter' },
+    { id: 6, title: 'Laravel' },
   ],
 };
 
-const virtualization: ISkill.Skill = {
+const databasesCaching: ISkill.Skill = {
   id: 2,
-  category: 'Virtualization',
+  category: 'Databases & Caching',
   items: [
-    {
-      id: 0,
-      title: 'AWS',
-    },
-    {
-      id: 1,
-      title: 'Docker',
-    },
-    {
-      id: 2,
-      title: 'MySQL',
-    },
-    {
-      id: 3,
-      title: 'Nginx',
-    },
-    {
-      id: 4,
-      title: 'Apache',
-    },
-    {
-      id: 5,
-      title: 'Redis',
-    },
-    {
-      id: 6,
-      title: 'Kafka',
-    },
-    {
-      id: 7,
-      title: 'FCM',
-    },
+    { id: 1, title: 'PostgreSQL' },
+    { id: 2, title: 'MySQL' },
+    { id: 3, title: 'Redis' },
+    { id: 4, title: 'MongoDB' },
   ],
 };
 
-const automation: ISkill.Skill = {
+const devOpsCloud: ISkill.Skill = {
   id: 3,
-  category: 'Automation',
+  category: 'DevOps & Cloud',
   items: [
-    {
-      id: 0,
-      title: 'Vim',
-    },
-    {
-      id: 1,
-      title: 'VS Code',
-    },
-    {
-      id: 2,
-      title: 'Visual Studio',
-    },
-    {
-      id: 3,
-      title: 'Jenkins',
-    },
-    {
-      id: 4,
-      title: 'Git',
-    },
-    {
-      id: 5,
-      title: 'Github',
-    },
+    { id: 1, title: 'Docker' },
+    { id: 2, title: 'Kubernetes' },
+    { id: 3, title: 'AWS' },
+    { id: 4, title: 'Nginx' },
+    { id: 5, title: 'Jenkins' },
+  ],
+};
+
+const toolsIDE: ISkill.Skill = {
+  id: 4,
+  category: 'Tools & IDEs',
+  items: [
+    { id: 1, title: 'Git & GitHub' },
+    { id: 2, title: 'VS Code' },
+    { id: 3, title: 'Vim' },
+    { id: 4, title: 'Postman' },
   ],
 };
 
 const misc: ISkill.Skill = {
-  id: 4,
-  category: 'Misc',
+  id: 5,
+  category: 'Miscellaneous',
   items: [
-    {
-      id: 0,
-      title: 'Piano',
-    },
-    {
-      id: 1,
-      title: 'Travel',
-    },
-    {
-      id: 2,
-      title: 'Badminton',
-    },
-    {
-      id: 3,
-      title: 'Guitar',
-    },
-    {
-      id: 4,
-      title: 'Fishing',
-    },
-    {
-      id: 5,
-      title: 'Golf',
-    },
-    {
-      id: 6,
-      title: 'Netflix',
-    },
+    { id: 1, title: 'Linux Shell' },
+    { id: 2, title: 'RESTful API Design' },
+    { id: 3, title: 'GraphQL' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [programmingLanguages, kernelDevelopment, virtualization, automation, misc],
-  // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [
+    programmingLanguages,
+    frameworks,
+    databasesCaching,
+    devOpsCloud,
+    toolsIDE,
+    misc,
+  ],
 };
 
 export default skill;
