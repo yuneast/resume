@@ -34,7 +34,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '',
+    title: '도전을 즐깁니다',
     icon: faBell,
   },
 };
