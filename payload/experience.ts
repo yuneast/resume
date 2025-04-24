@@ -69,9 +69,7 @@ const experience: IExperience.Payload = {
       position: 'Founder & Full-Stack Developer',
       startedAt: '2016-10',
       endedAt: '2021-12',
-      descriptions: [
-        '1인 프리랜서',
-      ],
+      descriptions: ['1인 프리랜서'],
       skillKeywords: ['C#', 'PHP', 'Python', 'Solidity', 'Go', 'Web3.js', 'JavaScript', 'MySQL'],
     },
   ],

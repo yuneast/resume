@@ -23,7 +23,10 @@ const project: IProject.Payload = {
           content: '시스템 최적화 및 성능 개선',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'Redis를 이용하여 첫 번째로 콜을 잡은 사람이 DB에 처리되기 전에 해당 수주를 Redis에 수주 완료 처리를 하고 이후 요청은 전부 무시하는 방법으로 구현' },
+            {
+              content:
+                'Redis를 이용하여 첫 번째로 콜을 잡은 사람이 DB에 처리되기 전에 해당 수주를 Redis에 수주 완료 처리를 하고 이후 요청은 전부 무시하는 방법으로 구현',
+            },
           ],
         },
       ],
@@ -40,7 +43,8 @@ const project: IProject.Payload = {
           content: 'Python FastAPI를 사용한 백엔드 API 개발',
         },
         {
-          content: '입주민과 작업자를 연결하는 아웃소싱 서비스 기능 구현 (벌레 잡기, 빨래, 쓰레기 버리기, 에어컨 청소 등)',
+          content:
+            '입주민과 작업자를 연결하는 아웃소싱 서비스 기능 구현 (벌레 잡기, 빨래, 쓰레기 버리기, 에어컨 청소 등)',
         },
         {
           content: '이커머스 플랫폼의 주문 처리 및 관리 시스템 개발',
@@ -100,10 +104,12 @@ const project: IProject.Payload = {
       where: '뉴소프트',
       descriptions: [
         {
-          content: '구글 스프레드시트 API를 활용하여 필요한 데이터를 신속하게 추출하고, 이를 사용하여 표준화된 형식의 위임장을 자동으로 생성하는 시스템 개발',
+          content:
+            '구글 스프레드시트 API를 활용하여 필요한 데이터를 신속하게 추출하고, 이를 사용하여 표준화된 형식의 위임장을 자동으로 생성하는 시스템 개발',
         },
         {
-          content: '안전한 전자 서명 프로세스를 문서에 통합하여, 법적 요구 사항을 충족시키는 동시에 문서 인증 및 전송 과정 자동화',
+          content:
+            '안전한 전자 서명 프로세스를 문서에 통합하여, 법적 요구 사항을 충족시키는 동시에 문서 인증 및 전송 과정 자동화',
         },
         {
           content: '딥러닝을 이용한 CAPTCHA 인식',
@@ -128,8 +134,8 @@ const project: IProject.Payload = {
           content: '체험단 등급을 매기는 알고리즘 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { 
-              content: '체험단의 활동 및 성과를 기반으로 등급을 산정하는 알고리즘 설계 및 구현' 
+            {
+              content: '체험단의 활동 및 성과를 기반으로 등급을 산정하는 알고리즘 설계 및 구현',
             },
           ],
         },
@@ -137,15 +143,13 @@ const project: IProject.Payload = {
           content: '판매 통계 대시보드 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { 
-              content: 'Chart.js를 사용하여 시각적으로 보기 쉽게 통계 대시보드 구현' 
+            {
+              content: 'Chart.js를 사용하여 시각적으로 보기 쉽게 통계 대시보드 구현',
             },
           ],
         },
       ],
     },
-
-    
 
     {
       id: 5,
@@ -165,7 +169,6 @@ const project: IProject.Payload = {
         },
       ],
     },
-
 
     {
       id: 6,
