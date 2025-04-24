@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      id: 95,
+      id: 94,
       title: '코보티스',
       position: 'Python Backend Developer',
       startedAt: '2024-10',
@@ -18,7 +18,7 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Python', 'FastAPI', 'PostgreSQL', 'Redis'],
     },
     {
-      id: 96,
+      id: 95,
       title: '가나다콜',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2024-02',
@@ -33,7 +33,7 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Python', 'FastAPI', 'Dart', 'Flutter', 'MySQL', 'Redis', 'FCM'],
     },
     {
-      id: 97,
+      id: 96,
       title: '유토빌',
       position: 'Python Backend Developer',
       startedAt: '2022-09',
@@ -49,7 +49,7 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Python', 'FastAPI', 'Docker', 'PostgreSQL', 'CI/CD', 'Jenkins'],
     },
     {
-      id: 98,
+      id: 97,
       title: '콘디',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2022-01',
@@ -64,14 +64,30 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Python', 'Django', 'React', 'Next.js', 'MySQL', 'Jenkins', 'Chart.js'],
     },
     {
+      id: 98,
+      title: 'SportsBet 경기 데이터 수집·파싱 플랫폼(호주 멜버른)',
+      position: 'Backend Developer',
+      startedAt: '2020-06',
+      endedAt: '2021-02',
+      descriptions: [
+        'Python BeautifulSoup 및 Requests 기반 크롤러 설계·구현으로 주요 경기 데이터 자동 수집 파이프라인 구축',
+        'PostgreSQL 스키마 설계 및 파티셔닝 도입으로 데이터 적재 속도 3배 향상',
+        'Celery 워커로 실시간 스케줄링 처리, 1분 단위 경기 업데이트를 안정적으로 실행',
+        'Redis 캐시 레이어를 활용해 API 응답 지연시간을 500ms 이하로 유지',
+        '일일 10만 건 이상의 경기 데이터를 분 단위로 수집'
+      ],
+      skillKeywords: ['Python', 'BeautifulSoup', 'Requests', 'Celery', 'PostgreSQL', 'Redis'],
+    },
+    {
       id: 99,
       title: '뉴소프트',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2016-10',
-      endedAt: '2021-12',
+      endedAt: '2020-06',
       descriptions: ['1인 프리랜서'],
       skillKeywords: ['C#', 'PHP', 'Python', 'Solidity', 'Go', 'Web3.js', 'JavaScript', 'MySQL'],
     },
+    
   ],
 };
 
