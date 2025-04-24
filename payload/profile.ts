@@ -1,6 +1,7 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
 import image from '../asset/sample_tux.png';
 
@@ -32,10 +33,10 @@ const profile: IProfile.Payload = {
       icon: faGithub,
     },
   ],
-  // notice: {
-  //   title: '언제든지 연락주셔도 괜찮습니다.',
-  //   icon: faBell,
-  // },
+  notice: {
+    title: '커피챗을 좋아합니다. 언제든 편하게 대화해요! ☕',
+    icon: faBell,
+  },
 };
 
 export default profile;
