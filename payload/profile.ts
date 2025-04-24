@@ -34,7 +34,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '휴대전화나 페이스북 메시지 아닌 이메일로 연락 부탁드립니다.',
+    title: '언제든지 연락주셔도 괜찮습니다.',
     icon: faBell,
   },
 };
