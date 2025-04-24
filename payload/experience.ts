@@ -14,6 +14,7 @@ const experience: IExperience.Payload = {
         'Celery 비동기 태스크로 OpenAI GPT-4o-mini API 호출 및 JSON 일괄 생성 처리, 파싱 오류율 90% 감소',
         'PostgreSQL PostGIS 공간 인덱스를 활용한 지도 기반 쿼리로 응답 속도 50% 개선',
         'Google Places API 호출 최적화 및 캐싱 전략 도입으로 API 비용 60% 절감',
+        'AWS S3 스토리지 및 CloudFront CDN 도입으로 정적 자산 배포 지연 시간 70% 감소'
       ],
       skillKeywords: ['Python', 'FastAPI', 'PostgreSQL', 'Redis'],
     },
@@ -45,7 +46,6 @@ const experience: IExperience.Payload = {
         'ORM 파라미터 바인딩 강제 설정 및 정적 분석 도구 도입으로 SQL 인젝션 취약점 12건 전수 점검 후 100% 패치',
         '비동기 작업 큐(RQ) 도입 및 배치 처리 스케줄러 구축으로 주문 처리량 초당 50건 → 120건으로 140% 향상',
         'OAuth2 플로우와 Redis 토큰 캐싱을 활용한 JWT 기반 SSO 구현으로 로그인 지연 시간 800ms → 200ms로 75% 개선',
-        'AWS S3 스토리지 및 CloudFront CDN 도입으로 정적 자산 배포 지연 시간 70% 감소'
       ],
       skillKeywords: ['Python', 'FastAPI', 'Docker', 'PostgreSQL', 'CI/CD', 'Jenkins'],
     },
