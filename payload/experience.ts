@@ -22,7 +22,7 @@ const experience: IExperience.Payload = {
       title: '가나다콜',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2024-02',
-      endedAt: '2024-07',
+      endedAt: '2024-09',
       descriptions: [
         'Redis 캐시 도입 및 비동기 I/O 최적화를 통해 FastAPI 기반 백엔드 API 응답 시간을 평균 120ms → 75ms로 38% 단축',
         '슬로우 쿼리 로그 분석 후 MySQL 인덱스 추가 및 복잡 쿼리 구조 분할로 DB 성능 30% 향상',
@@ -52,7 +52,7 @@ const experience: IExperience.Payload = {
       id: 97,
       title: '콘디',
       position: 'Founder & Full-Stack Developer',
-      startedAt: '2022-01',
+      startedAt: '2021-07',
       endedAt: '2022-06',
       descriptions: [
         'select_related/prefetch_related 적용 및 쿼리 최적화로 Django REST API 응답 시간 200ms → 120ms로 40% 개선',
@@ -60,6 +60,7 @@ const experience: IExperience.Payload = {
         'Redis 캐시 레이어 및 materialized view 도입으로 데이터 조회 속도 60% 향상',
         '로그 데이터 기반 피드백 루프 개발로 사용자 등급 산정 알고리즘 정확도 82% → 93% 정밀도 개선',
         'Chart.js 라이브러리 최적화 및 데이터 샘플링 적용으로 판매 통계 대시보드 로드 시간 5s → 2s 개선',
+        '누적 회원수 3,000명 확보'
       ],
       skillKeywords: ['Python', 'Django', 'React', 'Next.js', 'MySQL', 'Jenkins', 'Chart.js'],
     },
