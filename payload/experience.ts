@@ -6,12 +6,12 @@ const experience: IExperience.Payload = {
   list: [
     {
       id: 93,
-      title: '딜잇 (Dealit - 실시간 핫딜 가격 추적 서비스)',
+      title: '딜잇',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2025-06',
       descriptions: [
         'Next.js, FastAPI, PostgreSQL 기반 실시간 핫딜 추적 서비스 기획 및 개발',
-        'Celery+Redis로 10만+ 상품 가격 실시간 수집/분석 파이프라인 구축',
+        'Celery + Redis 기반 파이프라인 구축으로 500만+ 가격 데이터 실시간 수집·분석',
         'SSE, FCM을 활용한 실시간 알림 및 사용자 개인화 이벤트 시스템 구현',
         'PostgreSQL/Redis 최적화로 1분 내 대량 데이터 안정 수집',
       ],
