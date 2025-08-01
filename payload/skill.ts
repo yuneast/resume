@@ -5,37 +5,41 @@ const backend: ISkill.Skill = {
   category: 'Backend',
   items: [
     { id: 1, title: 'Python' },
-    { id: 2, title: 'FastAPI' },
-    { id: 3, title: 'Django' },
-    { id: 4, title: 'Celery' },
-    { id: 5, title: 'PostgreSQL' },
-    { id: 6, title: 'MySQL' },
-    { id: 7, title: 'Redis' },
-    { id: 8, title: 'MongoDB' },
-    { id: 9, title: 'RESTful API Design' },
+    { id: 2, title: 'Java' },
+    { id: 3, title: 'FastAPI' },
+    { id: 4, title: 'Spring' },
+    { id: 5, title: 'JPA' },
+    { id: 6, title: 'J4Log' },
+    { id: 7, title: 'Django' },
+    { id: 8, title: 'Celery' },
+    { id: 9, title: 'PostgreSQL' },
+    { id: 10, title: 'MySQL' },
+    { id: 11, title: 'Redis' },
+    { id: 12, title: 'MongoDB' },
+    { id: 13, title: 'RESTful API Design' },
   ],
 };
 
-const frontend: ISkill.Skill = {
-  id: 1,
-  category: 'Frontend / App',
-  items: [
-    { id: 1, title: 'TypeScript' },
-    { id: 2, title: 'JavaScript' },
-    { id: 3, title: 'React' },
-    { id: 4, title: 'Next.js' },
-    { id: 5, title: 'Flutter' },
-    { id: 6, title: 'Dart' },
-  ],
-};
+// const frontend: ISkill.Skill = {
+//   id: 1,
+//   category: 'Frontend / App',
+//   items: [
+//     { id: 1, title: 'TypeScript' },
+//     { id: 2, title: 'JavaScript' },
+//     { id: 3, title: 'React' },
+//     { id: 4, title: 'Next.js' },
+//     { id: 5, title: 'Flutter' },
+//     { id: 6, title: 'Dart' },
+//   ],
+// };
 
 const devops: ISkill.Skill = {
   id: 2,
   category: 'DevOps & Infra',
   items: [
     { id: 1, title: 'Docker' },
-    { id: 2, title: 'AWS' },
-    { id: 3, title: 'Kubernetes' },
+    { id: 2, title: 'Docker Compose' },
+    { id: 3, title: 'AWS' },
     { id: 4, title: 'Nginx' },
     { id: 5, title: 'Jenkins' },
     { id: 6, title: 'Linux / Shell scripting' },
@@ -59,14 +63,12 @@ const etc: ISkill.Skill = {
   items: [
     { id: 1, title: 'GraphQL' },
     { id: 2, title: 'FCM' },
-    { id: 3, title: 'Web3.js' },
-    { id: 4, title: 'Solidity' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, frontend, devops, tools, etc],
+  skills: [backend, devops, tools, etc],
 };
 
 export default skill;
