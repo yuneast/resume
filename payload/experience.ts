@@ -21,7 +21,6 @@ const experience: IExperience.Payload = {
       title: '딜잇',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2025-06',
-      endedAt: '2025-07',
       descriptions: [
         'Next.js, FastAPI, PostgreSQL 기반 실시간 핫딜 추적 서비스 기획 및 개발',
         'Celery + Redis 기반 파이프라인 구축으로 500만+ 가격 데이터 실시간 수집·분석',
@@ -52,7 +51,6 @@ const experience: IExperience.Payload = {
       title: '가나다콜',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2024-02',
-      endedAt: '2024-09',
       descriptions: [
         'FastAPI + Redis 캐시 도입, 평균 응답시간 120ms→75ms로 38% 개선',
         'MySQL 인덱스 최적화, 복잡 쿼리 구조 개선으로 DB 성능 30% 향상',
