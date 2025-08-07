@@ -5,10 +5,23 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      id: 92,
+      title: '공부선배',
+      position: 'Backend Developer',
+      startedAt: '2025-07',
+      descriptions: [
+        '작성중'
+      ],
+      skillKeywords: [
+        'Java', 'Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'Redis', 'Docker', 'AWS'
+      ],
+    },
+    {
       id: 93,
       title: '딜잇',
       position: 'Founder & Full-Stack Developer',
       startedAt: '2025-06',
+      endedAt: '2025-07',
       descriptions: [
         'Next.js, FastAPI, PostgreSQL 기반 실시간 핫딜 추적 서비스 기획 및 개발',
         'Celery + Redis 기반 파이프라인 구축으로 500만+ 가격 데이터 실시간 수집·분석',
