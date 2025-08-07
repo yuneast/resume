@@ -13,7 +13,7 @@ const experience: IExperience.Payload = {
         '작성중'
       ],
       skillKeywords: [
-        'Java', 'Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'Redis', 'Docker', 'AWS'
+        'PHP', 'Java', 'Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'Redis', 'Docker', 'AWS'
       ],
     },
     {
