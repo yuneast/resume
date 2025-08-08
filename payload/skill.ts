@@ -15,7 +15,6 @@ const backend: ISkill.Skill = {
     { id: 9, title: 'PostgreSQL' },
     { id: 10, title: 'MySQL' },
     { id: 11, title: 'Redis' },
-    { id: 12, title: 'MongoDB' },
   ],
 };
 
