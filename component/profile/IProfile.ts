@@ -7,7 +7,7 @@ export declare namespace IProfile {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78017522-5c078f80-7387-11ea-9c04-8087da5787f1.png)
    *
-   * @example https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/profile.ts
+   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/profile.ts
    */
   export interface Payload extends ICommon.Payload {
     /**

@@ -7,7 +7,7 @@ export declare namespace IOpenSource {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78058383-2f716900-73c3-11ea-8846-0eb0ae055f32.png)
    *
-   * @example https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/openSource.ts
+   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/openSource.ts
    */
   export interface Payload extends ICommon.Payload {
     /** ### 오픈소스 활동 리스트 */

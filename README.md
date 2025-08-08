@@ -4,7 +4,7 @@
 - Next.js, Bootstrap CSS 가 사용되었다.
 - 사실 https://github.com/uyu423/resume-legacy 를 Next.js 로 포팅한 것.
 - Sample: https://yundongju.newsoft.kr
-  - 더 많은 예제는 [EXAMPLE.md](https://github.com/newsoft111/yundongjun-portfolio/blob/master/EXAMPLE.md) 를 참고한다.
+  - 더 많은 예제는 [EXAMPLE.md](https://github.com/yuneast/yundongjun-portfolio/blob/master/EXAMPLE.md) 를 참고한다.
 
 
 ## Requirements
@@ -45,75 +45,75 @@ npm run dev
 
 ### Payload Description
 
-- TypeDoc: https://github.com/newsoft111/yundongjun-portfolio/typedoc
+- TypeDoc: https://github.com/yuneast/yundongjun-portfolio/typedoc
   - TypeDoc 내에 모든 Payload 에 대한 Rendering Sample Screenshot 이 포함되어 있습니다.
 - `_global`, `footer` Payload 을 제외한 모든 Payload 에는 `disable?: boolean` 필드가 존재합니다. 해당 필드가 `true` 면 해당 Payload 의 Section 을 렌더링하지 않습니다.
 
 #### Profile
 
 - 프로필 사진, 이름, 연락수단, 약간의 공지사항 영역
-- TypeDoc: [IProfile.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iprofile.payload.html)
-- TS Sample: [payload/profile.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/profile.ts)
+- TypeDoc: [IProfile.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iprofile.payload.html)
+- TS Sample: [payload/profile.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/profile.ts)
 
 #### Introduce
 
 - 자기 소개 영역
-- TypeDoc: [IIntroduce.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iintroduce.payload.html)
-- TS Sample: [payload/introduce.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/introduce.ts)
+- TypeDoc: [IIntroduce.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iintroduce.payload.html)
+- TS Sample: [payload/introduce.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/introduce.ts)
 
 #### Skill
 
 - 본인 보유 기술에 대한 소개 영역
-- TypeDoc: [ISkill.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iskill.payload.html)
-- TS Sample: [payload/skill.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/skill.ts)
+- TypeDoc: [ISkill.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iskill.payload.html)
+- TS Sample: [payload/skill.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/skill.ts)
 
 #### Experience
 
 - (직장)경험에 대한 소개 영역
-- TypeDoc: [IExperience.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iexperience.payload.html)
-- TS Sample: [payload/experience.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/experience.ts)
+- TypeDoc: [IExperience.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iexperience.payload.html)
+- TS Sample: [payload/experience.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/experience.ts)
 
 #### Project
 
 - 수행 프로젝트에 대한 소개 영역
-- TypeDoc: [IProject.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iproject.payload.html)
-- TS Sample: [payload/project.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/project.ts)
+- TypeDoc: [IProject.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iproject.payload.html)
+- TS Sample: [payload/project.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/project.ts)
 
 #### Open Source
 
 - 오픈소스 활동에 대한 소개 영역
-- TypeDoc: [IOpenSource.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iopensource.payload.html)
-- TS Sample: [payload/openSource.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/openSource.ts)
+- TypeDoc: [IOpenSource.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iopensource.payload.html)
+- TS Sample: [payload/openSource.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/openSource.ts)
 
 #### Presentation
 
 - 발표 활동에 대한 소개 영역
-- TypeDoc: [IPresentation.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/ipresentation.payload.html)
-- TS Sample: [payload/presentation.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/presentation.ts)
+- TypeDoc: [IPresentation.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/ipresentation.payload.html)
+- TS Sample: [payload/presentation.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/presentation.ts)
 
 #### Article
 
 - 블로그/SNS 포스트, 기사에 대한 소개 영역
-- TypeDoc: [IArticle.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iarticle.payload.html)
-- TS Sample: [payload/article.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/article.ts)
+- TypeDoc: [IArticle.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iarticle.payload.html)
+- TS Sample: [payload/article.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/article.ts)
 
 #### Education
 
 - 학업에 대한 소개 영역
-- TypeDoc: [IEducation.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/ieducation.payload.html)
-- TS Sample: [payload/education.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/education.ts)
+- TypeDoc: [IEducation.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/ieducation.payload.html)
+- TS Sample: [payload/education.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/education.ts)
 
 #### ETC
 
 - 기타 항목(대회, 자격증, 봉사 등)에 대한 소개 영역
-- TypeDoc: [IEtc.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/ietc.payload.html)
-- TS Sample: [payload/etc.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/etc.ts)
+- TypeDoc: [IEtc.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/ietc.payload.html)
+- TS Sample: [payload/etc.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/etc.ts)
 
 #### \_Global
 
 - 전역 설정(Web Title, SEO, favicon 등)에 대한 설정 영역
-- TypeDoc: [IGlobal.Payload](https://github.com/newsoft111/yundongjun-portfolio/typedoc/interfaces/iglobal.payload.html)
-- TS Sample: [payload/\_global.ts](https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/_global.ts)
+- TypeDoc: [IGlobal.Payload](https://github.com/yuneast/yundongjun-portfolio/typedoc/interfaces/iglobal.payload.html)
+- TS Sample: [payload/\_global.ts](https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/_global.ts)
 
 ## Export
 
@@ -146,9 +146,9 @@ npm run export
 ## Question?
 
 - production 빌드에서 이미지가 깨지는 경우
-  - see https://github.com/newsoft111/yundongjun-portfolio/issues/24
+  - see https://github.com/yuneast/yundongjun-portfolio/issues/24
 - Section 의 순서는 어떻게 조절하나요?
   - 현재는 `pages/index.tsx` 에서 직접 렌더링 순서를 변경하는 수 밖에 없습니다.
   - 데이터나 `_global` payload 로 핸들링하는 방법을 고민 중입니다.
 - index.html 에서 이미지, CSS가 404 발생하는 경우
-  - https://github.com/newsoft111/yundongjun-portfolio/issues/37 참고
+  - https://github.com/yuneast/yundongjun-portfolio/issues/37 참고

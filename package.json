@@ -18,10 +18,10 @@
     "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://github.com/newsoft111/yundongjun-portfolio",
+  "homepage": "https://github.com/yuneast/yundongjun-portfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newsoft111/yundongjun-portfolio.git"
+    "url": "git+https://github.com/yuneast/yundongjun-portfolio.git"
   },
   "keywords": [
     "resume",
@@ -35,7 +35,7 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/newsoft111/yundongjun-portfolio/issues"
+    "url": "https://github.com/yuneast/yundongjun-portfolio/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

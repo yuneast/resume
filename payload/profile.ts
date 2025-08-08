@@ -30,7 +30,7 @@ const profile: IProfile.Payload = {
     },
     {
       id: 3,
-      link: 'https://github.com/newsoft111',
+      link: 'https://github.com/yuneast',
       icon: faGithub,
     },
   ],

@@ -6,7 +6,7 @@ export declare namespace IExperience {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78032558-27540200-73a0-11ea-83cd-3fd1cea68402.png)
    *
-   * @example https://github.com/newsoft111/yundongjun-portfolio/blob/master/payload/experience.ts
+   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/experience.ts
    */
   export interface Payload extends ICommon.Payload {
     /** ### Experience 데이터 목록 */
