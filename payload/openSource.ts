@@ -4,71 +4,28 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
-      id: 0,
-      title: 'Linux Kernal',
+      id: 99,
+      title: 'Github Daily Commit',
       descriptions: [
         {
-          content: 'Regular contributor to kernel patches.',
+          content: 'GitHub 기여도 그래프에 잔디를 심기 위한 자동 커밋 스크립트',
         },
         {
-          content: 'Active member of kernel security audit team.',
-        },
-      ],
-    },
-    {
-      id: 1,
-      title: 'GNOME',
-      descriptions: [
-        {
-          content: 'Contributor to UX improvements for system utilities.',
+          content: 'Bash 스크립트와 Crontab을 활용한 자동화된 일일 커밋 시스템',
         },
         {
-          content: 'https://github.com/GNOME',
-          href: 'https://github.com/GNOME',
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: 'node',
-      descriptions: [
-        { content: 'Node.js JavaScript runtime' },
-        { content: 'Contributor' },
-        {
-          content: 'https://github.com/nodejs/node',
-          href: 'https://github.com/nodejs/node',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage: 'https://img.shields.io/github/stars/nodejs/node.svg?style=popout',
-        },
-      ],
-    },
-    {
-      id: 3,
-      title: 'NestJS',
-      descriptions: [
-        {
-          content: 'A progressive Node.js framework',
-        },
-        {
-          content:
-            'for building efficient, scalable, and enterprise-grade server-side applications',
+          content: '매일 자동으로 커밋을 생성하여 GitHub 잔디밭을 관리',
         },
         {
           content: 'Contributor',
         },
         {
-          content: 'https://github.com/nestjs/nest',
-          href: 'https://github.com/nestjs/nest',
+          content: 'https://github.com/yuneast/github-daily-commit',
+          href: 'https://github.com/yuneast/github-daily-commit',
         },
         {
-          content: 'Monthly Download: ',
-          postImage: 'https://img.shields.io/npm/dm/@nestjs/core.svg',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage: 'https://img.shields.io/github/stars/nestjs/nest.svg?style=popout',
+          content: 'GitHub Stars: ',
+          postImage: 'https://img.shields.io/github/stars/yuneast/github-daily-commit.svg?style=popout',
         },
       ],
     },
