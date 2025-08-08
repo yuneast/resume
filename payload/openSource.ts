@@ -17,9 +17,6 @@ const openSource: IOpenSource.Payload = {
           content: '매일 자동으로 커밋을 생성하여 GitHub 잔디밭을 관리',
         },
         {
-          content: 'Contributor',
-        },
-        {
           content: 'https://github.com/yuneast/github-daily-commit',
           href: 'https://github.com/yuneast/github-daily-commit',
         },
