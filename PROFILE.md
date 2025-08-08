@@ -83,7 +83,6 @@
 - 📧 **Email**: ydj0617@gmail.com
 - 📱 **Phone**: +82 10-3633-9999  
 - 💼 **GitHub**: [@yuneast](https://github.com/yuneast)
-- 📄 **Resume**: [이력서 보기](https://yundongjun.newsoft.kr) *(실제 URL로 변경 필요)*
-
+- 📄 **Resume**: [바로가기](https://yundongjun.newsoft.kr)
 ---
 ⭐ **"기술적 문제 해결을 통해 비즈니스 가치를 창출하는 것이 제 목표입니다"**
