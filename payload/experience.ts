@@ -10,7 +10,8 @@ const experience: IExperience.Payload = {
       position: 'Backend Developer',
       startedAt: '2025-07',
       descriptions: [
-        '작성중'
+        'PHP→Java Spring Boot 마이크로서비스 아키텍처 전환 주도',
+        'AWS CloudWatch 로그 오류 감지 시 Bedrock Claude Code를 통해 자동으로 소스를 수정하고 GitHub 브런치 및 PR 생성하는 워크플로우 설계 및 구현'
       ],
       skillKeywords: [
         'PHP', 'Java', 'Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'Redis', 'Docker', 'AWS'
@@ -24,7 +25,6 @@ const experience: IExperience.Payload = {
       descriptions: [
         'Next.js, FastAPI, PostgreSQL 기반 실시간 핫딜 추적 서비스 기획 및 개발',
         'Celery + Redis 기반 파이프라인 구축으로 500만+ 가격 데이터 실시간 수집·분석',
-        'SSE, FCM을 활용한 실시간 알림 및 사용자 개인화 이벤트 시스템 구현',
         'PostgreSQL/Redis 최적화로 1분 내 대량 데이터 안정 수집',
       ],
       skillKeywords: [
@@ -52,9 +52,7 @@ const experience: IExperience.Payload = {
       position: 'Founder & Full-Stack Developer',
       startedAt: '2024-02',
       descriptions: [
-        'FastAPI + Redis 캐시 도입, 평균 응답시간 120ms→75ms로 38% 개선',
         'MySQL 인덱스 최적화, 복잡 쿼리 구조 개선으로 DB 성능 30% 향상',
-        'Flutter 앱 코드 스플리팅·스플래시 프리로딩으로 초기 로딩 4s→2s 단축',
         'FCM 푸시 알림 백오프·재시도 로직으로 성공률 92%→99% 상승',
         'AWS CloudWatch/EC2 오토스케일링으로 트래픽 급증 자동 대응',
       ],
@@ -67,7 +65,7 @@ const experience: IExperience.Payload = {
       startedAt: '2022-09',
       endedAt: '2024-02',
       descriptions: [
-        'PHP→FastAPI 엔드포인트 자동 변환 스크립트 및 테스트 자동화로 유지보수 시간 60% 절감',
+        'PHP→FastAPI 엔드포인트 마이그레이션과 테스트 자동화를 통해 유지보수 작업 시간을 60% 절감',
         'PostgreSQL 테이블 파티셔닝/중복 인덱스 제거로 마이그레이션 다운타임 2h→15m 단축',
         'Jenkins+Docker Compose 기반 CI/CD 파이프라인 구축, 배포 주기 2주→1일 단축',
         'ORM 파라미터 바인딩 및 정적 분석으로 SQL 인젝션 100% 패치',
@@ -84,10 +82,7 @@ const experience: IExperience.Payload = {
       endedAt: '2022-06',
       descriptions: [
         'Django REST API 쿼리 최적화로 응답 200ms→120ms(40% 개선)',
-        'Next.js SSR 캐싱·코드 스플리팅으로 초기 렌더링 3s→1.5s 단축',
-        'Redis 캐시 및 materialized view로 데이터 조회 60% 향상',
         '로그 기반 피드백 알고리즘으로 사용자 등급 산정 정밀도 82%→93%',
-        'Chart.js 최적화로 대시보드 로드 5s→2s 개선',
         '누적 회원 3,000명 확보',
       ],
       skillKeywords: ['Python', 'Django', 'React', 'Next.js', 'MySQL', 'Jenkins', 'Chart.js'],
@@ -102,7 +97,6 @@ const experience: IExperience.Payload = {
         'Python BeautifulSoup/Requests 기반 크롤러 설계로 주요 경기 데이터 자동 수집',
         'PostgreSQL 파티셔닝·스키마 최적화로 데이터 적재 3배 향상',
         'Celery 워커로 1분 단위 실시간 경기 업데이트 안정화',
-        'Redis 캐시로 API 응답 지연 500ms 이하 유지',
         '일일 10만 건 이상 경기 데이터 분 단위 수집',
       ],
       skillKeywords: ['Python', 'BeautifulSoup', 'Requests', 'Celery', 'PostgreSQL', 'Redis'],

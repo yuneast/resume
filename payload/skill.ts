@@ -59,8 +59,7 @@ const etc: ISkill.Skill = {
   id: 4,
   category: 'Other',
   items: [
-    { id: 1, title: 'GraphQL' },
-    { id: 2, title: 'FCM' },
+    { id: 1, title: 'GraphQL'},
   ],
 };
 
