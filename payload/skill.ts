@@ -55,17 +55,17 @@ const tools: ISkill.Skill = {
   ],
 };
 
-const etc: ISkill.Skill = {
-  id: 4,
-  category: 'Other',
-  items: [
-    { id: 1, title: 'GraphQL'},
-  ],
-};
+// const etc: ISkill.Skill = {
+//   id: 4,
+//   category: 'Other',
+//   items: [
+//     { id: 1, title: 'GraphQL'},
+//   ],
+// };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, devops, tools, etc],
+  skills: [backend, devops, tools],
 };
 
 export default skill;
