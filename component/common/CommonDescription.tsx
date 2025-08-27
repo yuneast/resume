@@ -12,12 +12,15 @@ export function CommonDescription({
     <>
       {descriptions ? (
         <ul className={option?.padding ? 'pt-2' : ''}>
-          {descriptions.map((description) => {
+          {descriptions.map((description, descIndex) => {
             return (
               <>
-                <Description description={description} />
+                <Description description={description} key={descIndex.toString()} />
                 {description.descriptions ? (
-                  <DescriptionRecursion descriptions={description.descriptions} />
+                  <DescriptionRecursion
+                    descriptions={description.descriptions}
+                    key={descIndex.toString()}
+                  />
                 ) : (
                   ''
                 )}
@@ -38,12 +41,15 @@ function DescriptionRecursion({
 }: PropsWithChildren<{ descriptions: IRow.Description[] }>) {
   return (
     <ul>
-      {descriptions.map((description) => {
+      {descriptions.map((description, index) => {
         return (
           <>
-            <Description description={description} />
+            <Description description={description} key={index.toString()} />
             {description.descriptions ? (
-              <DescriptionRecursion descriptions={description.descriptions} />
+              <DescriptionRecursion
+                descriptions={description.descriptions}
+                key={index.toString()}
+              />
             ) : (
               ''
             )}
@@ -128,8 +134,4 @@ const fontWeight: Record<IRow.FontWeightType, number> = {
   BOLD: 700,
   EXTRA_BOLD: 800,
   BLACK: 900,
-};
-
-CommonDescription.defaultProps = {
-  option: {},
 };

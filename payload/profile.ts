@@ -1,6 +1,6 @@
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
 import image from '../asset/sample_tux.png';
@@ -16,22 +16,23 @@ const profile: IProfile.Payload = {
   },
   contact: [
     {
-      id: 1,
       title: 'ydj0617@gmail.com',
       link: 'mailto:ydj0617@gmail.com',
       icon: faEnvelope,
     },
     {
-      id: 2,
       title: '+82 10-3633-9979',
       link: 'tel:+821036339979',
       icon: faPhone,
       badge: true,
     },
     {
-      id: 3,
       link: 'https://github.com/yuneast',
       icon: faGithub,
+    },
+    {
+      link: 'https://www.facebook.com/groups/ubuntu.ko',
+      icon: faFacebook,
     },
   ],
   notice: {

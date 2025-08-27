@@ -1,6 +1,6 @@
 import { Col, Row } from 'reactstrap';
 import { PropsWithChildren } from 'react';
-import { EmptyRowCol } from '../common';
+import { EmptyRowCol, HrefTargetBlank } from '../common';
 
 import { IFooter } from './IFooter';
 import { Style } from '../common/Style';
@@ -18,10 +18,9 @@ function Component({ payload }: PropsWithChildren<{ payload: IFooter.Payload }>)
             <small>
               v.{`${payload.version} / `}
               {/* Github 주소는 origin repository 의 주소를 넣는다. */}
-              {/* <HrefTargetBlank url="https://github.com/yuneast/yundongjun-portfolio" text="Github" /> */}
-              {/* {' / '} */}
-              {/* Thanks for <HrefTargetBlank url="https://blog.outsider.ne.kr/1234" text="Outsider" /> */}
-              © Dongjun Yun. All Rights Reserved.
+              <HrefTargetBlank url="https://github.com/uyu423/resume-nextjs" text="Github" />
+              {' / '}
+              Thanks for <HrefTargetBlank url="https://blog.outsider.ne.kr/1234" text="Outsider" />
             </small>
           </EmptyRowCol>
         </div>

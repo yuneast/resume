@@ -6,7 +6,7 @@ export declare namespace IExperience {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78032558-27540200-73a0-11ea-83cd-3fd1cea68402.png)
    *
-   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/experience.ts
+   * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/experience.ts
    */
   export interface Payload extends ICommon.Payload {
     /** ### Experience 데이터 목록 */
@@ -16,12 +16,16 @@ export declare namespace IExperience {
   }
 
   export interface Item {
-    id: number;
     /** ### (직장)경험 명 */
     title: string;
 
+    /** ### (직장)수행한 직위/직책 포지션 정보 */
+    positions: Position[];
+  }
+
+  export interface Position {
     /** ### (직장)역할 명 (or Subtitle) */
-    position: string;
+    title: string;
 
     /**
      * ### (직장)경험 시작 일
