@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
       position: 'Backend Developer',
       startedAt: '2025-07',
       descriptions: [
-        'PHP → Kotlin Spring Boot 기반 MSA 전환 주도',
+        'PHP → Kotlin(Spring Boot) 전환을 통해 성능 및 유지보수성 개선',
         '배포 환경 오류 실시간 탐지·자동 수정 (CloudWatch + GitHub Actions + Claude Code)'
       ],
       skillKeywords: [
