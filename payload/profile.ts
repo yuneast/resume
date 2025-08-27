@@ -23,8 +23,8 @@ const profile: IProfile.Payload = {
     },
     {
       id: 2,
-      title: '+82 10-3633-9999',
-      link: 'tel:+821036339999',
+      title: '+82 10-3633-9979',
+      link: 'tel:+821036339979',
       icon: faPhone,
       badge: true,
     },
