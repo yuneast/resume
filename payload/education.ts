@@ -20,7 +20,7 @@ const education: IEducation.Payload = {
     {
       id: 3,
       title: '브렌트 인터내셔널 스쿨 수빅',
-      subTitle: '1년 과정 이수',
+      subTitle: '졸업',
       startedAt: '2015-06',
       endedAt: '2016-06',
     },
