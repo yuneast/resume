@@ -10,7 +10,7 @@ export default function OpenSourceRow({
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => (
-        <CommonRows key={index.toString()} payload={serialize(item)} index={index} />
+        <CommonRows key={`${item.title}`} payload={serialize(item)} index={index} />
       ))}
     </EmptyRowCol>
   );

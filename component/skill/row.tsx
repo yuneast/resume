@@ -64,9 +64,9 @@ function createCalculatedSkillItems(items: ISkill.Item[], isVerticalScreen: bool
       <Row className="mt-2 mt-md-0">
         <Col xs={12}>
           <ul>
-            {items.map((skill, skillIndex) => {
+            {items.map((skill) => {
               return (
-                <li key={skillIndex.toString()}>
+                <li key={`${skill.title}-${skill.level ?? ''}`}>
                   {createBadge(skill.level)}
                   {skill.title}
                 </li>
@@ -80,13 +80,15 @@ function createCalculatedSkillItems(items: ISkill.Item[], isVerticalScreen: bool
 
   return (
     <Row className="mt-2 mt-md-0">
-      {list.map((skills, index) => {
+      {list.map((skills) => {
+        const colKey = `${skills[0]?.title ?? 'first'}-${skills[skills.length - 1]?.title ??
+          'last'}-${skills.length}`;
         return (
-          <Col md={4} xs={12} key={index.toString()}>
+          <Col md={4} xs={12} key={colKey}>
             <ul>
-              {skills.map((skill, skillIndex) => {
+              {skills.map((skill) => {
                 return (
-                  <li key={skillIndex.toString()}>
+                  <li key={`${skill.title}-${skill.level ?? ''}`}>
                     {createBadge(skill.level)}
                     {skill.title}
                   </li>

@@ -32,7 +32,8 @@ function EducationRow({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
-        return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
+        const key = `${item.title}-${item.startedAt}-${item.endedAt ?? ''}`;
+        return <CommonRows key={key} payload={serialize(item)} index={index} />;
       })}
     </EmptyRowCol>
   );

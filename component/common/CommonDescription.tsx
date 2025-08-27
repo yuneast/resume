@@ -1,4 +1,4 @@
-import { CSSProperties, PropsWithChildren } from 'react';
+import React, { CSSProperties, PropsWithChildren } from 'react';
 
 import { HrefTargetBlank } from '.';
 import { IRow } from './IRow';
@@ -6,25 +6,24 @@ import { IRow } from './IRow';
 /** Description Recusion Generator */
 export function CommonDescription({
   descriptions,
-  option,
+  option = {},
 }: PropsWithChildren<{ descriptions: IRow.Description[]; option?: { padding?: boolean } }>) {
   return (
     <>
       {descriptions ? (
         <ul className={option?.padding ? 'pt-2' : ''}>
-          {descriptions.map((description, descIndex) => {
+          {descriptions.map((description) => {
+            const key = `${description.content}-${description.href ?? ''}-${description.postImage ??
+              ''}-${description.postHref ?? ''}`;
             return (
-              <>
-                <Description description={description} key={descIndex.toString()} />
+              <React.Fragment key={key}>
+                <Description description={description} />
                 {description.descriptions ? (
-                  <DescriptionRecursion
-                    descriptions={description.descriptions}
-                    key={descIndex.toString()}
-                  />
+                  <DescriptionRecursion descriptions={description.descriptions} />
                 ) : (
                   ''
                 )}
-              </>
+              </React.Fragment>
             );
           })}
         </ul>
@@ -35,25 +34,28 @@ export function CommonDescription({
   );
 }
 
+CommonDescription.defaultProps = {
+  option: {},
+};
+
 // ul 태그 depth 표현을 위한 재귀
 function DescriptionRecursion({
   descriptions,
 }: PropsWithChildren<{ descriptions: IRow.Description[] }>) {
   return (
     <ul>
-      {descriptions.map((description, index) => {
+      {descriptions.map((description) => {
+        const key = `${description.content}-${description.href ?? ''}-${description.postImage ??
+          ''}-${description.postHref ?? ''}`;
         return (
-          <>
-            <Description description={description} key={index.toString()} />
+          <React.Fragment key={key}>
+            <Description description={description} />
             {description.descriptions ? (
-              <DescriptionRecursion
-                descriptions={description.descriptions}
-                key={index.toString()}
-              />
+              <DescriptionRecursion descriptions={description.descriptions} />
             ) : (
               ''
             )}
-          </>
+          </React.Fragment>
         );
       })}
     </ul>

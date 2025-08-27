@@ -32,7 +32,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           </Col>
         </Row>
         {payload.skills.map((skill, index) => (
-          <SkillRow key={index.toString()} skill={skill} index={index} />
+          <SkillRow key={`${skill.category}`} skill={skill} index={index} />
         ))}
       </EmptyRowCol>
     </div>

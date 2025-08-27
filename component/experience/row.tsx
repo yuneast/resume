@@ -80,8 +80,8 @@ export default function ExperienceRow({
       </Row>
 
       {/* 각 Position을 최신 순으로 반복하여 개별 재직 기간과 직책 표시 */}
-      {sortedPositions.map((position, posIndex) => (
-        <Row key={posIndex.toString()} className="mt-2">
+      {sortedPositions.map((position) => (
+        <Row key={`${position.title}-${position.startedAt}`} className="mt-2">
           <Col sm={12} md={3} className="text-md-right">
             {/* positions가 1개 이상일 때만 Position의 재직 기간 표시 */}
             {hasMultiplePositions && (
@@ -93,8 +93,8 @@ export default function ExperienceRow({
           <Col sm={12} md={9}>
             <i style={Style.gray}>{position.title}</i>
             <ul className="pt-2">
-              {position.descriptions.map((description, descIndex) => (
-                <li key={descIndex.toString()}>{description}</li>
+              {position.descriptions.map((description) => (
+                <li key={description}>{description}</li>
               ))}
               {createSkillKeywords(position.skillKeywords)}
             </ul>
@@ -138,13 +138,8 @@ function createSkillKeywords(skillKeywords?: string[]) {
     <li>
       <strong>Skill Keywords</strong>
       <div>
-        {skillKeywords.map((keyword, index) => (
-          <Badge
-            style={Style.skillKeywordBadge}
-            key={index.toString()}
-            color="secondary"
-            className="mr-1"
-          >
+        {skillKeywords.map((keyword) => (
+          <Badge style={Style.skillKeywordBadge} key={keyword} color="secondary" className="mr-1">
             {keyword}
           </Badge>
         ))}

@@ -41,7 +41,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           </Col>
         </Row>
         {payload.list.map((item, index) => (
-          <ExperienceRow key={index.toString()} item={item} index={index} />
+          <ExperienceRow key={`${item.title}`} item={item} index={index} />
         ))}
       </EmptyRowCol>
     </div>

@@ -12,7 +12,8 @@ export default function PresentationRow({
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
-        return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
+        const key = `${item.title}-${item.at}`;
+        return <CommonRows key={key} payload={serialize(item)} index={index} />;
       })}
     </EmptyRowCol>
   );

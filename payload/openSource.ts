@@ -21,7 +21,8 @@ const openSource: IOpenSource.Payload = {
         },
         {
           content: 'GitHub Stars: ',
-          postImage: 'https://img.shields.io/github/stars/yuneast/github-daily-commit.svg?style=popout',
+          postImage:
+            'https://img.shields.io/github/stars/yuneast/github-daily-commit.svg?style=popout',
         },
       ],
     },
