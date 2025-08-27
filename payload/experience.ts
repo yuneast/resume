@@ -11,7 +11,7 @@ const experience: IExperience.Payload = {
       startedAt: '2025-07',
       descriptions: [
         'PHP → Kotlin Spring Boot 기반 MSA 전환 주도',
-        'AWS CloudWatch + Claude Code 활용 자동 수정 워크플로우 설계 (GitHub 브랜치/PR 자동화)'
+        '배포 환경 오류 실시간 탐지·자동 수정 (CloudWatch + GitHub Actions + Claude Code)'
       ],
       skillKeywords: [
         'PHP', 'Java', 'Kotlin', 'Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'Redis', 'Docker', 'AWS'
