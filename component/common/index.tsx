@@ -16,7 +16,3 @@ export function HrefTargetBlank({ url, text }: PropsWithChildren<{ url: string; 
     </a>
   );
 }
-
-HrefTargetBlank.defaultProps = {
-  text: '',
-};

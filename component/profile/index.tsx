@@ -53,8 +53,8 @@ function createProfileContactMap(contacts: Payload['contact']) {
   return (
     <Row>
       <Col className="pt-3">
-        {contacts.map((contact) => (
-          <ProfileContact key={contact.id} payload={contact} />
+        {contacts.map((contact, index) => (
+          <ProfileContact key={index.toString()} payload={contact} />
         ))}
       </Col>
     </Row>

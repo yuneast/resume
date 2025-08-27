@@ -4,7 +4,6 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
-      id: 99,
       title: 'Github Daily Commit',
       descriptions: [
         {

@@ -7,7 +7,7 @@ export declare namespace IProfile {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78017522-5c078f80-7387-11ea-9c04-8087da5787f1.png)
    *
-   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/profile.ts
+   * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/profile.ts
    */
   export interface Payload extends ICommon.Payload {
     /**
@@ -41,7 +41,6 @@ export declare namespace IProfile {
    * ![image](https://user-images.githubusercontent.com/8033320/78029163-19e84900-739b-11ea-9b5c-17e06f83738a.png)
    */
   interface Contact {
-    id: number;
     /**
      * ### 연락처 앞에 붙는 아이콘
      *

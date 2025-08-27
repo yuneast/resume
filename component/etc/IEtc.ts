@@ -6,7 +6,7 @@ export declare namespace IEtc {
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78058862-e40b8a80-73c3-11ea-89fe-7d907528ca78.png)
    *
-   * @example https://github.com/yuneast/yundongjun-portfolio/blob/master/payload/etc.ts
+   * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/etc.ts
    */
   export interface Payload extends ICommon.Payload {
     /** ### 기타 항목 리스트 */
@@ -14,7 +14,6 @@ export declare namespace IEtc {
   }
 
   export interface Item {
-    id: number;
     /** ### 기타 항목 제목 */
     title: string;
 
