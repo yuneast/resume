@@ -1,3 +1,5 @@
+//기술적 구체성 과 부하 분산 강조해서 전체를 다시 해줘. 수치는 없어도 돼.
+
 import { IExperience } from '../component/experience/IExperience';
 
 const experience: IExperience.Payload = {
@@ -11,7 +13,7 @@ const experience: IExperience.Payload = {
           title: 'Backend Developer',
           startedAt: '2025-08',
           descriptions: [
-            '레거시 PHP → Spring Boot API 리플랫폼을 Strangler 패턴으로 점진적 전환, 서비스 중단 없이 안정적 마이그레이션 완료',
+            '레거시 PHP 모놀리식을 Spring Boot API 서버로 리플랫폼, Strangler 패턴 기반 점진적 전환으로 서비스 중단 없이 마이그레이션 완료',
             'CloudWatch 로그 기반 오류 탐지 → GitHub Actions → Claude Code 연동으로 자동 수정·PR 파이프라인 구축, 장애 대응 속도 및 수동 핫픽스 의존도 감소',
           ],
           skillKeywords: [
