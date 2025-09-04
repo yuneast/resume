@@ -16,12 +16,12 @@ const education: IEducation.Payload = {
       startedAt: '2015-06',
       endedAt: '2016-06',
     },
-    {
-      title: '세광고등학교',
-      subTitle: '중퇴',
-      startedAt: '2014-03',
-      endedAt: '2015-06',
-    },
+    // {
+    //   title: '세광고등학교',
+    //   subTitle: '중퇴',
+    //   startedAt: '2014-03',
+    //   endedAt: '2015-06',
+    // },
   ],
 };
 
