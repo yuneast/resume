@@ -105,7 +105,7 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: '선물 코인 거래소 구축',
+          title: '코인 선물 거래소 구축',
           startedAt: '2023-03',
           endedAt: '2023-08',
           descriptions: [
