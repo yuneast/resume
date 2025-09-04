@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
       title: '공부선배',
       positions: [
         {
-          title: 'Spring Boot API 리플랫폼',
+          title: '기존 시스템 리팩토링 및 인프라 개선',
           startedAt: '2025-08',
           descriptions: [
             '레거시 PHP 모놀리식을 Spring Boot API 서버로 리플랫폼, Strangler 패턴 기반 점진적 전환으로 서비스 중단 없이 마이그레이션 완료',
