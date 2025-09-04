@@ -106,8 +106,8 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '코인 선물 거래소 구축',
-          startedAt: '2023-03',
-          endedAt: '2023-08',
+          startedAt: '2022-03',
+          endedAt: '2022-08',
           descriptions: [
             'WebSocket 게이트웨이와 Redis Pub/Sub로 시세·체결 이벤트를 브로드캐스트, 폴링 제거로 실시간 처리 부하 분산',
             '주문/포지션 API에 idempotency 키와 비동기 확인 큐 적용, 재시도에도 중복 체결 방지',
@@ -125,8 +125,8 @@ const experience: IExperience.Payload = {
         },
         {
           title: '온라인 강의 플랫폼 구축',
-          startedAt: '2022-09',
-          endedAt: '2022-11',
+          startedAt: '2021-09',
+          endedAt: '2021-11',
           descriptions: [
             '강의/수강/진도 스키마 정규화 및 인덱싱, 강의 목록·진도 집계 쿼리 병목 제거',
             '강의 썸네일·VOD 서빙에 캐시 레이어 도입, CDN 캐시 무효화 훅으로 원본 부하 감소',
@@ -141,8 +141,8 @@ const experience: IExperience.Payload = {
         },
         {
           title: '신차 장기렌트카 견적 플랫폼 구축',
-          startedAt: '2022-02',
-          endedAt: '2022-04',
+          startedAt: '2021-02',
+          endedAt: '2021-04',
           descriptions: [
             '차종/옵션/프로모션을 규칙 엔진으로 모델링, 계산 경로를 캐시해 반복 견적 부하 흡수',
             '외부 견적/재고 API 호출을 비동기화하고 서킷브레이커·버스트 제한으로 스파이크 트래픽 보호',
