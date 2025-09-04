@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
       title: '공부선배',
       positions: [
         {
-          title: 'Backend Developer',
+          title: 'Spring Boot API 리플랫폼',
           startedAt: '2025-08',
           descriptions: [
             '레거시 PHP 모놀리식을 Spring Boot API 서버로 리플랫폼, Strangler 패턴 기반 점진적 전환으로 서비스 중단 없이 마이그레이션 완료',
@@ -33,7 +33,7 @@ const experience: IExperience.Payload = {
       title: '딜잇',
       positions: [
         {
-          title: 'Founder & Full-Stack Developer',
+          title: '핫딜 알림 플랫폼 구축',
           startedAt: '2024-10',
           endedAt: '2025-06',
           descriptions: [
@@ -59,7 +59,7 @@ const experience: IExperience.Payload = {
       title: '가나다콜',
       positions: [
         {
-          title: 'Founder & Full-Stack Developer',
+          title: '선착순 수주 플랫폼 구축',
           startedAt: '2023-11',
           endedAt: '2024-09',
           descriptions: [
@@ -82,7 +82,7 @@ const experience: IExperience.Payload = {
       title: '유토빌',
       positions: [
         {
-          title: 'Backend Developer',
+          title: '레거시 리팩토링 및 클라우드 마이그레이션',
           startedAt: '2022-09',
           endedAt: '2024-02',
           descriptions: [
@@ -105,7 +105,7 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: '선물 코인 거래소',
+          title: '선물 코인 거래소 구축',
           startedAt: '2023-03',
           endedAt: '2023-08',
           descriptions: [
@@ -124,7 +124,7 @@ const experience: IExperience.Payload = {
           ],
         },
         {
-          title: '온라인 강의 플랫폼',
+          title: '온라인 강의 플랫폼 구축',
           startedAt: '2022-09',
           endedAt: '2022-11',
           descriptions: [
@@ -140,7 +140,7 @@ const experience: IExperience.Payload = {
           ],
         },
         {
-          title: '신차 장기렌트카 견적 플랫폼',
+          title: '신차 장기렌트카 견적 플랫폼 구축',
           startedAt: '2022-02',
           endedAt: '2022-04',
           descriptions: [
