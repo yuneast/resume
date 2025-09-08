@@ -13,13 +13,13 @@ const experience: IExperience.Payload = {
           title: '백엔드 개발자',
           startedAt: '2025-08',
           descriptions: [
-            '레거시 PHP 모놀리식을 Spring Boot API 서버로 리플랫폼, Strangler 패턴 기반 점진적 전환으로 서비스 중단 없이 마이그레이션 완료',
-            'CloudWatch 로그 기반 오류 탐지 → GitHub Actions → Claude Code 연동으로 자동 수정·PR 파이프라인 구축, 장애 대응 속도 및 수동 핫픽스 의존도 감소',
+            '운영 중인 PHP 모놀리식의 확장성 한계와 유지보수 어려움으로 신규 기능 추가 시 사이드이펙트 빈발, Strangler 패턴으로 점진적 마이그레이션 진행, 전체 재작성 대신 사용 빈도 높은 모듈부터 Spring Boot로 전환하여 개발 생산성 향상',
+            'PHP Fatal Error 발생 시 메신저 알림만 받던 수동 대응의 한계로 장애 복구 지연 문제 겪음, CloudWatch 로그 패턴 분석으로 반복 오류 식별 후 GitHub Actions 및 Claude Code 연동하여 자동 수정 파이프라인 구축, 오류는 자동 PR 생성으로 대응 시간 단축',
           ],
           skillKeywords: [
             'Spring Boot',
             'Kotlin/Java',
-            'JPA(Hibernate)',
+            'JPA',
             'MySQL',
             'Redis',
             'Docker',
@@ -30,22 +30,46 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '딜잇',
+      title: '코보티스',
       positions: [
         {
           title: '백엔드 개발자',
           startedAt: '2024-10',
           endedAt: '2025-06',
           descriptions: [
-            '대규모 상품 수집 파이프라인 및 핫딜 탐지 알고리즘 운영, 룰 기반 검증 로직으로 오탐/미탐 최소화',
-            'Celery + Redis 기반 배치 파이프라인 확장 및 워커 오토스케일링으로 피크 타임 큐 적체 방지',
-            'Redis 캐싱과 PostgreSQL 파티셔닝으로 조회 부하를 분산하고 병목 구간 제거',
-            'SSE(Server-Sent Events)로 실시간 알림을 푸시, 클라이언트 폴링 부하 제거 및 이벤트 전달 지연 최소화',
+            '체계 없던 개발 프로세스를 표준화, 코드 리뷰와 Git-flow 브랜치 전략 도입으로 배포 사고율 감소, 개발 속도보다 안정성 우선 선택으로 팀 생산성 장기적 향상',
+            'Google Maps API 호출 비용 월 수백만원 문제 해결, Redis 캐싱 전략으로 반복 요청 차단, 정확도 100% 대신 24시간 캐시 TTL 적용하여 API 비용 90% 절감',
+            '마인드케어 플랫폼 개발 시 기능 구현보다 확장 가능한 아키텍처 설계에 집중, 초기 개발 속도는 느렸지만 이후 기능 추가 시 수정 범위 최소화로 유지보수 효율성 확보',
+            '여행 일정 자동생성 서비스에서 GPT API 활용, 응답 속도보다 정확도 우선하여 프롬프트 최적화와 컨텍스트 강화에 집중, 3초 지연을 감수하고 사용자 맞춤형 일정 품질 향상으로 재사용률 증가',
           ],
           skillKeywords: [
             'Python',
             'FastAPI',
-            'PostgreSQL(Partitioning)',
+            'PostgreSQL',
+            'Redis',
+            'Celery',
+            'Docker',
+          ],
+        },
+      ],
+    },
+    {
+      title: '딜잇',
+      positions: [
+        {
+          title: '백엔드 개발자',
+          startedAt: '2024-01',
+          endedAt: '2024-08',
+          descriptions: [
+            '핫딜 오탐률 30% 문제를 해결하기 위해 가격 변동 패턴 분석 후 시간대별/카테고리별 임계값 동적 조정 알고리즘 도입, 정확도 향상과 실시간성 사이에서 5분 지연을 허용하여 검증 정확도 우선 전략 선택',
+            '빅스마일데이 기간 큐 적체로 8시간 지연 장애 경험 후, Celery 워커를 CPU 사용률 기반에서 큐 길이 기반 오토스케일링으로 변경, 피크 예측이 어려운 상황에서도 안정적 처리량 확보',
+            'PostgreSQL 풀스캔으로 인한 응답 지연 문제를 월별 파티셔닝과 복합 인덱스로 해결, 스토리지 비용 증가를 감수하고 조회 성능 우선으로 결정하여 사용자 경험 개선',
+            '클라이언트 실시간 알림을 위한 잦은 폴링으로 서버 부하 증가 문제 발생, SSE(Server-Sent Events) 도입으로 푸시 방식 전환, 연결 유지 오버헤드보다 반복 요청 처리 비용이 크다고 판단하여 서버 리소스 효율화',
+          ],
+          skillKeywords: [
+            'Python',
+            'FastAPI',
+            'PostgreSQL',
             'Redis',
             'Celery',
             'Docker',
@@ -60,12 +84,12 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '백엔드 개발자 ',
-          startedAt: '2023-11',
-          endedAt: '2024-09',
+          startedAt: '2023-06',
+          endedAt: '2024-05',
           descriptions: [
-            '선착순 수주 도메인 모델 설계 및 트랜잭션 제어로 동시 다발 요청 상황에서도 데이터 일관성 확보',
-            'Redis 분산 락과 원자적 트랜잭션으로 중복 수주 발생 제거, 동시성 충돌 제어 강화',
-            'Celery 기반 비동기 처리로 대량 FCM 알림 지연을 줄여 실시간성 보장',
+            '고소작업차 선착순 배차 시 동일 콜에 3-4명이 동시 수락하는 문제 발생, DB 트랜잭션만으로는 부족하여 Redis 분산 락 도입, 응답 속도 50ms 증가를 감수하고 데이터 정합성 우선 선택',
+            '기사 위치 기반 배차 시 거리 계산 부하로 타임아웃 발생, 실시간 계산 대신 지역별 그리드 사전 캐싱 전략 채택, 100% 최적 배차보다 95% 준최적 배차로 응답 속도 개선에 집중',
+            'FCM 푸시 알림 10초 지연으로 기사 이탈률 증가, 동기 처리에서 Celery 비동기 큐 분리로 병렬 처리 구현, API 응답과 푸시 알림을 분리하여 사용자 경험과 실시간성 모두 확보',
           ],
           skillKeywords: [
             'Python',
@@ -86,17 +110,16 @@ const experience: IExperience.Payload = {
           startedAt: '2022-09',
           endedAt: '2024-02',
           descriptions: [
-            '레거시 PHP 서버를 FastAPI 기반 API 서버로 리팩토링, 안정성과 유지보수성 개선',
-            'PostgreSQL 파티셔닝 및 인덱스 최적화로 대규모 데이터 조회 성능 향상 및 스토리지 자원 효율화',
-            'GitHub Actions + Jenkins CI/CD 파이프라인 구축으로 배포 자동화 및 장애 복구 리드타임 단축',
-            '온프레미스 워크로드를 클라우드 환경으로 이전해 확장성과 가용성 강화',
+            'PHP 레거시 코드의 복잡도 증가로 신규 기능 개발 리드타임 3배 증가 문제, 전면 재작성보다 트래픽 많은 핵심 API부터 FastAPI로 단계적 전환 결정, 6개월간 기존 PHP와 신규 FastAPI 병행 운영의 복잡도를 감수하고 무중단 전환 달성',
+            '마이그레이션 사고 경험 후 DB 환경별 권한 분리와 --dry-run 필수화 프로세스 도입, 개발 속도 희생하더라도 안전장치 강화를 선택하여 운영 사고 제로화 달성',
+            '온프레미스 서버 증설 리드타임 2주 문제로 트래픽 급증 대응 실패 경험 후 클라우드 전환, 유휴 리소스 비용 증가 대신 탄력적 확장성 확보를 선택하여 비즈니스 기회 손실 방지',
           ],
           skillKeywords: [
             'Python',
             'FastAPI',
             'PostgreSQL',
             'Docker',
-            'CI/CD(Jenkins·GitHub Actions)',
+            'CI/CD',
           ],
         },
       ],
@@ -109,14 +132,15 @@ const experience: IExperience.Payload = {
           startedAt: '2021-01',
           endedAt: '2023-12',
           descriptions: [
-            
+            "암호화폐 거래소 구축",
+            "온라인 강의 플랫폼 구축",
+            "신차 장기렌트카 견적 플랫폼 구축",
           ],
           skillKeywords: [
             'Python',
-            'FastAPI',
+            'PHP',
+            "MySQL",
             'PostgreSQL',
-            'Docker',
-            'CI/CD(Jenkins·GitHub Actions)',
           ],
         },
       ],
