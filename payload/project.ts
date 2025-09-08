@@ -1,7 +1,7 @@
 import { IProject } from '../component/project/IProject';
 
 const project: IProject.Payload = {
-  disable: false,
+  disable: true,
   list: [
     {
       title: '암호화폐 거래소 백엔드 시스템',
