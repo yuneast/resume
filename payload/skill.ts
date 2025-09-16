@@ -9,7 +9,6 @@ const backend: ISkill.Skill = {
     { title: 'FastAPI' },
     { title: 'Spring' },
     { title: 'Django' },
-    { title: 'Celery' },
     { title: 'JPA' },
     { title: 'SQLAlchemy' },
     { title: 'PostgreSQL' },
