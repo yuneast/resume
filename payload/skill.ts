@@ -36,6 +36,7 @@ const tools: ISkill.Skill = {
     { title: 'VS Code' },
     { title: 'IntelliJ' },
     { title: 'DBeaver' },
+    { title: 'Putty' },
     { title: 'Postman' },
   ],
 };
