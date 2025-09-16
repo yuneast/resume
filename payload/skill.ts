@@ -7,6 +7,7 @@ const backend: ISkill.Skill = {
     { title: 'Java' },
     { title: 'Kotlin' },
     { title: 'FastAPI' },
+    { title: 'Django' },
     { title: 'Spring' },
     { title: 'Django' },
     { title: 'JPA' },

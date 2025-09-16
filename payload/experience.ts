@@ -43,7 +43,9 @@ const experience: IExperience.Payload = {
           ],
           skillKeywords: [
             'Python',
+            "PHP",
             'FastAPI',
+            'Laravel',
             'PostgreSQL',
             'Redis',
             'Celery',
@@ -113,7 +115,8 @@ const experience: IExperience.Payload = {
           ],
           skillKeywords: [
             'Python',
-            'FastAPI',
+            'PHP',
+            'Django',
             'PostgreSQL',
             'Docker',
             'CI/CD',
