@@ -130,8 +130,8 @@ const experience: IExperience.Payload = {
         {
           title: '1인 프리랜서',
           startedAt: '2021-01',
-          endedAt: '2023-12',
           descriptions: [
+            "자리톡 전월세 자동 신고 시스템 구축",
             "암호화폐 거래소 구축",
             "온라인 강의 플랫폼 구축",
             "신차 장기렌트카 견적 플랫폼 구축",
