@@ -34,8 +34,8 @@ const tools: ISkill.Skill = {
   category: 'Tools',
   items: [
     { title: 'Git / GitHub' },
-    { title: 'VS Code' },
-    { title: 'IntelliJ' },
+    { title: 'YouTrack'},
+    { title: 'Cursor' },
     { title: 'DBeaver' },
     { title: 'Putty' },
     { title: 'Postman' },

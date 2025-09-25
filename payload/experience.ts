@@ -13,6 +13,7 @@ const experience: IExperience.Payload = {
           title: '백엔드 개발자',
           startedAt: '2025-08',
           descriptions: [
+            '배포 이후 실제 환경에서 발생할 수 있는 리그레션을 예방하기 위해 PHPUnit 기반 사후 테스트를 도입, 목데이터를 활용한 API 호출 검증과 스모크 테스트를 자동화하여 안정적인 배포 품질 확보',
             '운영 중인 PHP 모놀리식의 확장성 한계와 유지보수 어려움으로 신규 기능 추가 시 사이드이펙트 빈발, Strangler 패턴으로 점진적 마이그레이션 진행, 전체 재작성 대신 사용 빈도 높은 모듈부터 Spring Boot로 전환하여 개발 생산성 향상',
             'PHP Fatal Error 발생 시 메신저 알림만 받던 수동 대응의 한계로 장애 복구 지연 문제 겪음, CloudWatch 로그 패턴 분석으로 반복 오류 식별 후 GitHub Actions 및 Claude Code 연동하여 자동 수정 파이프라인 구축, 오류는 자동 PR 생성으로 대응 시간 단축',
           ],
