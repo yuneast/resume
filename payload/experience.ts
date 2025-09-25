@@ -39,7 +39,7 @@ const experience: IExperience.Payload = {
           endedAt: '2025-06',
           descriptions: [
             '개발 프로세스를 표준화하여 코드 리뷰와 Git-flow 전략을 도입, 배포 사고를 줄이고 팀 전체의 협업 안정성을 강화',
-            '여행 일정 생성 시 GPT 응답 속도보다 결과 품질을 우선시, 프롬프트 최적화와 컨텍스트 설계에 집중해 맞춤형 일정 정확도를 높임',
+            'GPT API 호출 시 지연 발생 문제를 비동기 요청과 캐싱 레이어로 보완, 다중 사용자 요청 상황에서도 안정적 응답 속도 유지',
           ],
           skillKeywords: [
             'Python',
