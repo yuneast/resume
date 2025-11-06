@@ -14,7 +14,7 @@ const experience: IExperience.Payload = {
           startedAt: '2025-08',
           descriptions: [
             'PHP 모놀리식 구조의 확장성 한계를 극복하기 위해 Strangler 패턴을 적용, 트래픽 집중 API부터 Spring Boot로 점진적 이전을 진행하여 운영 리스크를 줄이고 개발 효율성을 높임',
-            '배포 후 발생 가능한 리그레션을 방지하기 위해 PHPUnit 기반 사후 테스트 체계 구축, 목데이터와 스모크 테스트를 자동화하여 배포 안정성을 확보',
+            '배포 후 발생 가능한 리그레션을 방지하기 위해 PHPUnit 기반 유닛 테스트 체계 구축, 목데이터와 스모크 테스트를 자동화하여 배포 안정성을 확보',
             'PHP Fatal Error 발생 시 수동 대응의 한계를 개선하기 위해 CloudWatch 로그 패턴을 분석, GitHub Actions와 Claude Code를 연동해 자동 PR 생성 파이프라인을 구축하여 장애 대응 시간을 단축',
           ],
           skillKeywords: [
@@ -33,32 +33,32 @@ const experience: IExperience.Payload = {
         },
       ],
     },
-    {
-      title: '코보티스',
-      positions: [
-        {
-          title: '백엔드 개발자',
-          startedAt: '2024-10',
-          endedAt: '2025-06',
-          descriptions: [
-            '개발 프로세스를 표준화하여 코드 리뷰와 Git-flow 전략을 도입, 배포 사고를 줄이고 팀 전체의 협업 안정성을 강화',
-            'GPT API 호출 시 지연 발생 문제를 비동기 요청과 캐싱 레이어로 보완, 다중 사용자 요청 상황에서도 안정적 응답 속도 유지',
-          ],
-          skillKeywords: [
-            'Python',
-            "PHP",
-            'FastAPI',
-            'Laravel',
-            'SQLAlchemy',
-            'PostgreSQL',
-            'MySql',
-            'Redis',
-            'Celery',
-            'Docker',
-          ],
-        },
-      ],
-    },
+    // {
+    //   title: '코보티스',
+    //   positions: [
+    //     {
+    //       title: '백엔드 개발자',
+    //       startedAt: '2024-10',
+    //       endedAt: '2025-06',
+    //       descriptions: [
+    //         '개발 프로세스를 표준화하여 코드 리뷰와 Git-flow 전략을 도입, 배포 사고를 줄이고 팀 전체의 협업 안정성을 강화',
+    //         'GPT API 호출 시 지연 발생 문제를 비동기 요청과 캐싱 레이어로 보완, 다중 사용자 요청 상황에서도 안정적 응답 속도 유지',
+    //       ],
+    //       skillKeywords: [
+    //         'Python',
+    //         "PHP",
+    //         'FastAPI',
+    //         'Laravel',
+    //         'SQLAlchemy',
+    //         'PostgreSQL',
+    //         'MySql',
+    //         'Redis',
+    //         'Celery',
+    //         'Docker',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       title: '딜잇',
       positions: [
@@ -115,9 +115,10 @@ const experience: IExperience.Payload = {
           startedAt: '2022-09',
           endedAt: '2024-02',
           descriptions: [
-            'PHP 레거시의 복잡도를 줄이기 위해 FastAPI로 단계적 전환을 진행, 트래픽 상위 API부터 이전하며 무중단 환경에서 신규 서비스 안정화',
             '마이그레이션 중 발생했던 운영 사고를 계기로 DB 권한을 환경별로 분리하고 --dry-run을 필수화, 배포 안정성을 높여 장애 재발을 방지',
+            'PHP 레거시의 복잡도를 줄이기 위해 FastAPI로 단계적 전환을 진행, 트래픽 상위 API부터 이전하며 무중단 환경에서 신규 서비스 안정화',
             '온프레미스 증설 지연 문제를 해결하기 위해 클라우드 환경으로 전환, 비용 증가를 감수하고도 탄력적 확장성을 확보해 트래픽 급증에도 대응 가능',
+            '개발 프로세스를 표준화하여 코드 리뷰와 Git-flow 전략을 도입, 배포 사고를 줄이고 팀 전체의 협업 안정성을 강화',
           ],
           skillKeywords: [
             'Python',
