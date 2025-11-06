@@ -15,7 +15,7 @@ const etc: IEtc.Payload = {
       startedAt: '2026-02',
     },
     {
-      title: "매경테스트 우수",
+      title: "TESAT 3급",
       subTitle: '경제·경영 및 시사 이해력을 평가하는 종합 능력 시험',
       startedAt: '2025-09',
     },
