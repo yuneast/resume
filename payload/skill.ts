@@ -3,29 +3,23 @@ import { ISkill } from '../component/skill/ISkill';
 const backend: ISkill.Skill = {
   category: 'Backend',
   items: [
-    { title: 'Python' },
-    { title: 'Java' },
-    { title: 'Kotlin' },
-    { title: 'FastAPI' },
-    { title: 'Django' },
-    { title: 'Spring' },
-    { title: 'Django' },
-    { title: 'JPA' },
-    { title: 'SQLAlchemy' },
-    { title: 'PostgreSQL' },
-    { title: 'MySQL' },
+    { title: 'Python, Java, Kotlin' },
+    { title: 'FastAPI, Django, Spring Boot' },
+    { title: 'SQLAlchemy, JPA' },
+    { title: 'PostgreSQL / MySQL' },
     { title: 'Redis' },
+    { title: 'Celery, SSE, FCM' },
   ],
 };
+
+
 
 const devops: ISkill.Skill = {
   category: 'DevOps & Infra',
   items: [
-    { title: 'Docker' },
-    { title: 'Docker Compose' },
-    { title: 'AWS' },
+    { title: 'Docker / Docker Compose' },
+    { title: 'AWS (EC2, S3, CloudWatch)' },
     { title: 'Nginx' },
-    { title: 'Jenkins' },
     { title: 'Linux / Shell scripting' },
   ],
 };
@@ -34,10 +28,7 @@ const tools: ISkill.Skill = {
   category: 'Tools',
   items: [
     { title: 'Git / GitHub' },
-    { title: 'YouTrack'},
-    { title: 'Cursor' },
     { title: 'DBeaver' },
-    { title: 'Putty' },
     { title: 'Postman' },
   ],
 };

@@ -32,7 +32,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '문제를 해결하는 과정을 즐깁니다',
+    title: '신규 기회 제안은 편하게 연락주세요.',
     icon: faBell,
   },
 };
