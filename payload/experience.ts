@@ -25,7 +25,7 @@ const experience: IExperience.Payload = {
       title: '딜잇',
       positions: [
         {
-          title: '백엔드 개발자',
+          title: 'Co-Founder & 백엔드 개발자',
           startedAt: '2024-01',
           endedAt: '2025-06',
           descriptions: [
@@ -44,7 +44,7 @@ const experience: IExperience.Payload = {
       title: '가나다콜',
       positions: [
         {
-          title: '백엔드 개발자 ',
+          title: 'Co-Founder & 백엔드 개발자 ',
           startedAt: '2023-06',
           descriptions: [
             '기사 배차 시 발생하는 중복 수락(Race Condition) 문제를 Redis 분산 락으로 제어해 데이터 꼬임 현상 방지',
@@ -57,20 +57,23 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '유토빌',
+      title: "유토빌",
       positions: [
         {
-          title: '백엔드 개발자',
-          startedAt: '2022-09',
-          endedAt: '2024-02',
+          title: "백엔드 개발자",
+          startedAt: "2022-09",
+          endedAt: "2024-02",
           descriptions: [
-            '운영 DB 사고를 막기 위해 계정별 권한을 분리하고, 배포 스크립트에 Dry-run(가실행) 검증 단계 추가',
-            '노후된 PHP 시스템을 유지보수가 용이한 FastAPI 기반 API 서버로 재구축하여 개발 효율 개선',
-            '온프레미스 서버를 클라우드로 옮기고 오토스케일링을 적용해, 트래픽 변동에 유연하게 대응하도록 인프라 개선',
-            'Git-flow 전략과 코드 리뷰를 도입하여 체계적인 협업 프로세스 정착',
+            "분리되어 있던 ERP와 이커머스 회원 시스템을 JWT 기반 SSO로 통합 구축",
+            "로그인 시도 시 레거시 DB(유토빌 1, 2)를 순차 조회하여, 검증된 계정을 신규 통합 DB로 자동 이관하는 Lazy Migration 구현",
+            "운영 DB 사고를 막기 위해 계정별 권한을 분리하고, 배포 스크립트에 Dry-run(가실행) 검증 단계 추가",
+            "노후된 PHP 시스템을 유지보수가 용이한 FastAPI 기반 API 서버로 재구축하여 개발 효율 개선",
+            "온프레미스 서버를 클라우드로 옮기고 오토스케일링을 적용해, 트래픽 변동에 유연하게 대응하도록 인프라 개선",
+            "Git-flow 전략과 코드 리뷰를 도입하여 체계적인 협업 프로세스 정착",
           ],
           skillKeywords: [
-            'Python', 'PHP', 'Django', 'Django ORM', 'PostgreSQL', 'Docker', 'CI/CD',
+            'Python', 'PHP', 'FastAPI', 'MySQL', 'Docker',
+            'Git', 'GitHub Actions', 'AWS CloudWatch',
           ],
         },
       ],
