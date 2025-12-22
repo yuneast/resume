@@ -11,9 +11,9 @@ const experience: IExperience.Payload = {
           title: '백엔드 개발자',
           startedAt: '2025-08',
           descriptions: [
-            'PHP 모놀리식 구조를 개선하기 위해 Strangler 패턴을 도입, 주요 API를 Spring Boot로 분리하여 코드 복잡도를 낮춤',
-            '배포 후 장애를 줄이기 위해 PHPUnit과 Mock 객체를 활용한 테스트 환경을 구축하고 테스트 커버리지 관리',
-            '장애 발생 시 LLM이 로그를 분석해 수정 코드를 포함한 PR을 자동으로 생성하도록 자동화하여, 원인 파악 시간을 단축',
+            'PHP로만 짜인 모놀리식을 점진적 대체 패턴으로 조금씩 분리해 주요 API를 Spring Boot로 옮기며 복잡도를 줄임',
+            '“배포 전 검증용으로 PHPUnit+Mock 테스트 체계를 구축하고 커버리지를 계속 관리',
+            '장애 시 로그를 LLM이 먼저 읽고 수정 코드까지 담은 PR을 올리게 자동화해 원인 찾는 시간을 크게 줄임',
           ],
           skillKeywords: [
             'PHP', 'Kotlin', 'Python', 'Spring Boot', 'FastAPI', 'JPA', 'MySQL', 'Redis', 'Docker', 'GitHub Actions', 'AWS CloudWatch',
@@ -47,8 +47,8 @@ const experience: IExperience.Payload = {
           title: 'Co-Founder & 백엔드 개발자 ',
           startedAt: '2023-06',
           descriptions: [
-            '기사 배차 시 발생하는 중복 수락(Race Condition) 문제를 Redis 분산 락으로 제어해 데이터 꼬임 현상 방지',
-            '주문 폭주 시간대에 푸시 알림이 늦게 가는 문제를 해결하기 위해 Celery 워커 설정을 튜닝하여 전송 속도 개선',
+            '배차 시 발생하는 중복 수락 문제를 Redis 분산 락으로 제어해 데이터 꼬임 현상 방지',
+            '알림 큐를 업무 큐와 분리하고 FCM 전송 커넥션 풀·배치 설정을 조정한 뒤 워커 동시성/prefetch를 재조정해 발주 알림 지연을 해소',
           ],
           skillKeywords: [
             'Python', 'FastAPI', 'SQLAlchemy', 'MySQL', 'Redis', 'Celery', 'FCM',
@@ -66,7 +66,7 @@ const experience: IExperience.Payload = {
           descriptions: [
             "분리되어 있던 ERP와 이커머스 회원 시스템을 JWT 기반 SSO로 통합 구축",
             "로그인 시도 시 레거시 DB(유토빌 1, 2)를 순차 조회하여, 검증된 계정을 신규 통합 DB로 자동 이관하는 Lazy Migration 구현",
-            "운영 DB 사고를 막기 위해 계정별 권한을 분리하고, 배포 스크립트에 Dry-run(가실행) 검증 단계 추가",
+            "운영 DB 사고를 막기 위해 계정별 권한을 분리하고, 배포 스크립트에 Dry-run 검증 단계 추가",
             "노후된 PHP 시스템을 유지보수가 용이한 FastAPI 기반 API 서버로 재구축하여 개발 효율 개선",
             "온프레미스 서버를 클라우드로 옮기고 오토스케일링을 적용해, 트래픽 변동에 유연하게 대응하도록 인프라 개선",
             "Git-flow 전략과 코드 리뷰를 도입하여 체계적인 협업 프로세스 정착",
@@ -88,7 +88,6 @@ const experience: IExperience.Payload = {
           descriptions: [
             '체험단 중개 플랫폼을 기획 및 개발, Django MVT 구조로 빠르게 MVP를 출시하여 초기 유저 3,000명 유치',
             '블로그 데이터 크롤링 시 DB 락이 걸리는 문제를 해결하기 위해 배치 처리 단위와 트랜잭션 범위 조정',
-            '필터링 조회 속도가 느린 API에 Eager Loading(select_related)을 적용해 N+1 문제 해결',
             '단일 서버에서 최대한 많은 트래픽을 받기 위해 Gunicorn 워커 설정 튜닝 및 정적 파일 캐싱 적용',
           ],
           skillKeywords: [
