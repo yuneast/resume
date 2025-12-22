@@ -15,7 +15,7 @@ const experience: IExperience.Payload = {
             'Repository에 Prepared Statement 전면 도입 및 쿼리 최적화로 보안·성능 개선',
             '서브쿼리에서 JOIN 쿼리 리팩토링으로 N+1 쿼리 제거 및 쿼리 복잡도 감소',
             '크론 서버 헬스체크 시스템 구축으로 장애 대응 자동화',
-            'WebSocket 실시간 전화 걸기 시스템 및 다층 권한 관리 체계 설계·구현',
+            'WebSocket으로 CID 프로그램과 연동해 인터넷 전화 발신 워크플로우 구현',
             'PHPUnit+Mock 테스트 체계 구축 및 커버리지 관리로 배포 안정성 확보',
             'LLM이 장애 로그 분석 후 수정 PR 자동 생성하는 파이프라인 구축',
           ],
