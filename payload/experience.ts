@@ -51,7 +51,6 @@ const experience: IExperience.Payload = {
           startedAt: '2023-06',
           descriptions: [
             '배차 시 발생하는 중복 수락 문제를 Redis 분산 락으로 제어해 데이터 꼬임 현상 방지',
-            'SSE와 asyncio.Queue로 실시간 주문 브로드캐스트 시스템 구축, Keep-alive 메커니즘으로 연결 안정성 확보',
             '사용자 위치 기반 FCM 푸시 타겟팅과 멤버십 자동 갱신 스케줄러로 운영 자동화 및 사용자 경험 개선',
           ],
           skillKeywords: [
