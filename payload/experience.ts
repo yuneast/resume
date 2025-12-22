@@ -32,7 +32,6 @@ const experience: IExperience.Payload = {
             '900만 건 이상의 가격 데이터 조회 속도가 느려지는 문제를 해결하기 위해, 쿼리 패턴에 맞춰 (상품ID, 날짜) 복합 인덱스 적용',
             '매일 쌓이는 크롤링 데이터 용량을 관리하기 위해, 상품당 하루 한 개의 최저가만 남기는 Upsert 방식으로 DB 부하 감소',
             '단순 가격 변동이 아닌 역대 최저가 대비 하락폭을 계산하는 로직을 추가해, 의미 없는 알림 발송을 줄임',
-            '반복적인 폴링(Polling) 요청을 SSE(Server-Sent Events) 실시간 푸시로 전환하여 서버 리소스 낭비 제거',
           ],
           skillKeywords: [
             'Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'Redis', 'Celery', 'Docker', 'FCM', 'SSE',
