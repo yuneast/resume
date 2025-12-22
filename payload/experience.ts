@@ -11,9 +11,13 @@ const experience: IExperience.Payload = {
           title: '백엔드 개발자',
           startedAt: '2025-08',
           descriptions: [
-            'PHP로만 짜인 모놀리식을 서비스/리포지토리 레이어로 쪼개 모듈화해 복잡도를 줄임',
-            '배포 전 검증용으로 PHPUnit+Mock 테스트 체계를 구축하고 커버리지를 계속 관리',
-            '장애 시 로그를 LLM이 먼저 읽고 수정 코드까지 담은 PR을 올리게 자동화해 원인 찾는 시간을 크게 줄임',
+            'PHP 모놀리식을 Service-Repository 패턴으로 리팩토링해 계층 분리 및 코드 복잡도 감소',
+            'Repository에 Prepared Statement 전면 도입 및 쿼리 최적화로 보안·성능 개선',
+            '서브쿼리에서 JOIN 리팩토링으로 N+1 쿼리 제거 및 쿼리 복잡도 감소',
+            '크론 서버 헬스체크 시스템 구축으로 장애 대응 자동화',
+            'WebSocket 실시간 전화 걸기 시스템 및 다층 권한 관리 체계 설계·구현',
+            'PHPUnit+Mock 테스트 체계 구축 및 커버리지 관리로 배포 안정성 확보',
+            'LLM이 장애 로그 분석 후 수정 PR 자동 생성하는 파이프라인 구축',
           ],
           skillKeywords: [
             'PHP', 'Kotlin', 'Python', 'Spring Boot', 'FastAPI', 'JPA', 'MySQL', 'Redis', 'Docker', 'GitHub Actions', 'AWS CloudWatch',
@@ -47,8 +51,8 @@ const experience: IExperience.Payload = {
           startedAt: '2023-06',
           descriptions: [
             '배차 시 발생하는 중복 수락 문제를 Redis 분산 락으로 제어해 데이터 꼬임 현상 방지',
-            '알림 큐를 업무 큐와 분리하고 FCM 전송 커넥션 풀·배치 설정을 조정한 뒤 워커 동시성/prefetch를 재조정해 발주 알림 지연을 해소',
-            '매일 구독 갱신 스케줄러를 돌려 야간에 갱신 작업을 자동 처리하고, 비동기로 안 돌던 작업을 워커 분리·청크 처리·인덱스 최적화로 실제 병렬 처리해 실행 시간을 단축',
+            'SSE와 asyncio.Queue로 실시간 주문 브로드캐스트 시스템 구축, Keep-alive 메커니즘으로 연결 안정성 확보',
+            '사용자 위치 기반 FCM 푸시 타겟팅과 멤버십 자동 갱신 스케줄러로 운영 자동화 및 사용자 경험 개선',
           ],
           skillKeywords: [
             'Python', 'FastAPI', 'SQLAlchemy', 'MySQL', 'Redis', 'Celery', 'FCM',
