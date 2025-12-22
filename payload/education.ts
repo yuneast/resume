@@ -14,7 +14,7 @@ const education: IEducation.Payload = {
       title: '브렌트 인터내셔널 스쿨 수빅',
       subTitle: '졸업',
       startedAt: '2015-06',
-      endedAt: '2016-06',
+      endedAt: '2016-12',
     },
     // {
     //   title: '세광고등학교',
