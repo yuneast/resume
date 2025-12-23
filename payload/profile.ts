@@ -3,12 +3,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
+// import image from '../asset/sample_tux.png';
 
 const profile: IProfile.Payload = {
   disable: false,
 
-  // 사진을 표시하려면 disableImage를 false로 설정하고 image 주석을 해제하세요
+  // 사진을 표시하려면 disableImage를 false로 설정하고 아래 image import와 image 설정의 주석을 해제하세요
   disableImage: true,
   // image: image,
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
