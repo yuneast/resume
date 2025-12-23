@@ -24,12 +24,12 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
     <div className="mt-5">
       <Row>
-        {!disableImage && (
+        {!disableImage && image && (
           <Col md={3} sm={12}>
             <ProfileImage src={image} />
           </Col>
         )}
-        <Col md={disableImage ? 12 : 9} sm={12}>
+        <Col md={disableImage || !image ? 12 : 9} sm={12}>
           {createNameArea(name)}
           {createProfileContactMap(contact)}
           {createNoticeArea(notice)}
