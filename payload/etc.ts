@@ -6,7 +6,7 @@ const etc: IEtc.Payload = {
   list: [
     {
       title: '네트워크관리사 2급',
-      subTitle: "네트워크 운영 및 보안 관리 역량 검증",
+      subTitle: '네트워크 운영 및 보안 관리 역량 검증',
       startedAt: '2025-12',
     },
     // {

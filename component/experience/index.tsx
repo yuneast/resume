@@ -51,7 +51,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
 export function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
   // 모든 position의 시작/종료 날짜를 수집
   const periods: { start: DateTime; end: DateTime }[] = [];
-  
+
   payload.list.forEach((item: IExperience.Item) => {
     item.positions.forEach((position: IExperience.Position) => {
       const startedAt = DateTime.fromFormat(position.startedAt, Util.LUXON_DATE_FORMAT.YYYY_LL);
@@ -67,13 +67,13 @@ export function getFormattingExperienceTotalDuration(payload: IExperience.Payloa
 
   // 겹치는 기간 병합
   const mergedPeriods: { start: DateTime; end: DateTime }[] = [];
-  
+
   periods.forEach((period) => {
     if (mergedPeriods.length === 0) {
       mergedPeriods.push(period);
     } else {
       const lastMerged = mergedPeriods[mergedPeriods.length - 1];
-      
+
       // 현재 기간이 마지막 병합된 기간과 겹치거나 인접한 경우
       if (period.start <= lastMerged.end) {
         // 종료일을 더 늦은 날짜로 확장

@@ -29,7 +29,10 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   );
 
   // experience에서 총 경력 계산
-  const totalExperience = getFormattingExperienceTotalDuration(experiencePayload).replace('총 ', '');
+  const totalExperience = getFormattingExperienceTotalDuration(experiencePayload).replace(
+    '총 ',
+    '',
+  );
 
   return (
     <div className="mt-5">

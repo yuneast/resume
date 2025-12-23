@@ -10,7 +10,6 @@ const coreBackend: ISkill.Skill = {
   ],
 };
 
-
 const asyncAndData: ISkill.Skill = {
   category: 'Async & Data',
   items: [
@@ -25,12 +24,8 @@ const asyncAndData: ISkill.Skill = {
 
 const infraAndOps: ISkill.Skill = {
   category: 'Infra & Ops',
-  items: [
-    { title: 'Docker, GitHub Actions' },
-    { title: 'AWS, CloudWatch' },
-  ],
+  items: [{ title: 'Docker, GitHub Actions' }, { title: 'AWS, CloudWatch' }],
 };
-
 
 const skill: ISkill.Payload = {
   disable: false,
