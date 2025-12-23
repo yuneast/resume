@@ -8,7 +8,7 @@ const experience: IExperience.Payload = {
       title: '공부선배',
       positions: [
         {
-          title: 'Backend Engineer',
+          title: '학원 운영관리 서비스 / 백엔드 개발자',
           startedAt: '2025-08',
           descriptions: [
             'PHP 기반 레거시 모놀리식 시스템을 Service–Repository 아키텍처로 리팩토링하여 계층 분리 및 코드 복잡도 감소',
@@ -23,8 +23,8 @@ const experience: IExperience.Payload = {
             'PHP',
             'Kotlin',
             'Spring Boot',
-            'FastAPI',
             'JPA',
+            'QueryDSL',
             'MySQL',
             'Redis',
             'Docker',
@@ -38,8 +38,8 @@ const experience: IExperience.Payload = {
       title: '코보티스',
       positions: [
         {
-          title: 'Backend Engineer',
-          startedAt: '2024-01',
+          title: '핫딜 알림 서비스 / 백엔드 개발자',
+          startedAt: '2025-02',
           endedAt: '2025-06',
           descriptions: [
             '초기 서비스 아키텍처 설계 및 백엔드 시스템 구축을 주도하고, 운영 안정화 단계까지 책임지고 유지보수 수행',
@@ -59,14 +59,34 @@ const experience: IExperience.Payload = {
             'AWS CloudWatch',
           ],
         },
+        {
+          title: '여행 플랫폼 서비스 / 백엔드 개발자',
+          startedAt: '2024-03',
+          endedAt: '2025-02',
+          descriptions: [
+            '여행 플랫폼 서비스의 백엔드 아키텍처를 설계하고 FastAPI 기반으로 콘텐츠·검색·추천·알림 API를 구축',
+            'LLM 응답이 기대한 스키마를 벗어나거나 필수 데이터가 누락되는 문제를 해결하기 위해 JSON Schema 기반 출력 강제, 재시도 및 규칙 기반 폴백 전략을 설계하여 데이터 생성 안정성 확보',
+            'LLM 생성 결과에 대해 검증·정제 레이어(필수 필드 검증, 길이 제한, 중복 제거)를 적용해 운영 중 데이터 품질 이슈 및 CS 발생을 감소',
+            'Google Maps API 호출 패턴을 분석하고 좌표·Place ID 기준 캐싱, 요청 중복 제거, 지오코딩 최소화 전략을 적용해 월 API 비용을 약 100만원 수준에서 10만원 수준으로 절감',
+            '사용자 작성 후기·게시글을 LLM으로 요약, 키워드 추출, 메타데이터(Title/Description) 생성하여 검색엔진 노출을 개선하는 SEO 자동화 파이프라인을 구축',
+            'Celery 기반 비동기 처리로 LLM 연산·SEO 생성·푸시 발송을 분리하고 Redis를 활용해 작업 상태 및 결과를 관리하여 메인 트랜잭션 지연을 최소화',
+          ],
+          skillKeywords: [
+            'Python',
+            'FastAPI',
+            'PostgreSQL',
+            'Redis',
+            'Celery',
+            'FCM',
+          ],
+        },
       ],
     },
     {
       title: '가나다콜',
       positions: [
         {
-          // Co-Founder → Backend 역할 중심, Founding Member는 선택적으로만
-          title: 'Backend Engineer (Founding Member)',
+          title: '고소작업차 실시간 배차 서비스 / 백엔드 개발자',
           startedAt: '2023-06',
           descriptions: [
             '초기 백엔드 설계 및 핵심 도메인(배차/결제/알림) 구현을 담당하고, 서비스 운영 및 안정화 단계까지 유지보수 수행',
@@ -90,7 +110,7 @@ const experience: IExperience.Payload = {
       title: '유토빌',
       positions: [
         {
-          title: 'Backend Engineer',
+          title: '공동주택 관리 서비스 / 백엔드 개발자',
           startedAt: '2022-09',
           endedAt: '2024-02',
           descriptions: [
@@ -118,8 +138,7 @@ const experience: IExperience.Payload = {
       title: '콘디',
       positions: [
         {
-          // Co-Founder → 독립적으로 책임진 엔지니어 관점으로 전환
-          title: 'Backend Engineer (Founding Member)',
+          title: '인플루언서 관리 및 체험단 중개 서비스 / 백엔드 개발자',
           startedAt: '2021-08',
           endedAt: '2022-08',
           descriptions: [
@@ -143,7 +162,7 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: 'Independent Backend Developer (Freelancer)',
+          title: '1인 프리랜서',
           startedAt: '2021-01',
           descriptions: [
             '도메인 요구사항 분석부터 설계·구현·운영까지 End-to-End로 수행하며 납기 및 품질을 책임',
