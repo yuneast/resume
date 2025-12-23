@@ -88,6 +88,7 @@ const experience: IExperience.Payload = {
         {
           title: '고소작업차 실시간 배차 서비스 / 백엔드 개발자',
           startedAt: '2023-06',
+          endedAt: '2024-03',
           descriptions: [
             '초기 백엔드 설계 및 핵심 도메인(배차/결제/알림) 구현을 담당하고, 서비스 운영 및 안정화 단계까지 유지보수 수행',
             '배차 처리 과정에서 발생하던 중복 수락 Race Condition을 Redis 분산 락으로 제어해 데이터 정합성 문제 해결',
@@ -159,10 +160,10 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '뉴소프트',
+      title: '뉴소프트 | 1인 프리랜서 (병행)',
       positions: [
         {
-          title: '1인 프리랜서',
+          title: '외주/프로젝트 단위로 수행',
           startedAt: '2021-01',
           descriptions: [
             '도메인 요구사항 분석부터 설계·구현·운영까지 End-to-End로 수행하며 납기 및 품질을 책임',
