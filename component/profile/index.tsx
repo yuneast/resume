@@ -20,14 +20,16 @@ export const Profile = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-  const { image, contact, name, notice } = payload;
+  const { image, disableImage, contact, name, notice } = payload;
   return (
     <div className="mt-5">
       <Row>
-        <Col md={3} sm={12}>
-          <ProfileImage src={image} />
-        </Col>
-        <Col md={9} sm={12}>
+        {!disableImage && (
+          <Col md={3} sm={12}>
+            <ProfileImage src={image} />
+          </Col>
+        )}
+        <Col md={disableImage ? 12 : 9} sm={12}>
           {createNameArea(name)}
           {createProfileContactMap(contact)}
           {createNoticeArea(notice)}

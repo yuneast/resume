@@ -12,8 +12,14 @@ export declare namespace IProfile {
   export interface Payload extends ICommon.Payload {
     /**
      * ### 프로필 이미지
+     * @description undefined 일 경우 이미지가 표시되지 않음
      */
-    image: string;
+    image?: string;
+    /**
+     * ### 프로필 이미지 표시 여부
+     * @description true일 경우 이미지 영역을 완전히 숨김
+     */
+    disableImage?: boolean;
     /** ### 이름 Object */
     name: {
       /** ### 이름 */
