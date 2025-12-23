@@ -48,7 +48,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   );
 }
 
-function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
+export function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
   // 모든 position의 시작/종료 날짜를 수집
   const periods: { start: DateTime; end: DateTime }[] = [];
   

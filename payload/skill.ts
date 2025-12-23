@@ -1,40 +1,40 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Backend',
+const coreBackend: ISkill.Skill = {
+  category: 'Core Backend',
   items: [
-    { title: 'Python, Java, Kotlin' },
-    { title: 'FastAPI, Django, Spring Boot' },
-    { title: 'SQLAlchemy, JPA, QueryDSL' },
+    { title: 'Python, Kotlin, Java' },
+    { title: 'FastAPI, Spring Boot' },
     { title: 'PostgreSQL, MySQL' },
     { title: 'Redis' },
-    { title: 'Celery, SSE' },
   ],
 };
 
 
-const devops: ISkill.Skill = {
-  category: 'DevOps & Infra',
+const asyncAndData: ISkill.Skill = {
+  category: 'Async & Data',
   items: [
-    { title: 'Docker, Docker Compose' },
-    { title: 'AWS (EC2, S3, CloudWatch)' },
-    { title: 'Nginx' },
-    { title: 'Linux, Shell scripting' },
+    { title: 'JPA' },
+    { title: 'QueryDSL' },
+    { title: 'SQLAlchemy' },
+    { title: 'PostgreSQL' },
+    { title: 'Docker' },
+    { title: 'Celery' },
   ],
 };
 
-const tools: ISkill.Skill = {
-  category: 'Tools',
+const infraAndOps: ISkill.Skill = {
+  category: 'Infra & Ops',
   items: [
-    { title: 'Git, GitHub' },
-    { title: 'DBeaver' },
-    { title: 'Postman' },
+    { title: 'Docker, GitHub Actions' },
+    { title: 'AWS, CloudWatch' },
   ],
 };
+
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, devops, tools],
+  skills: [coreBackend, asyncAndData, infraAndOps],
 };
 
 export default skill;

@@ -6,7 +6,7 @@ const education: IEducation.Payload = {
   list: [
     {
       title: '학점은행제',
-      subTitle: '컴퓨터공학 전공, 재학중',
+      subTitle: '컴퓨터공학 전공 (2026년 학위 취득 예정)',
       startedAt: '2025-04',
       // endedAt: '2010-02',
     },

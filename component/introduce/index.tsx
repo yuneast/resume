@@ -5,6 +5,8 @@ import { Style } from '../common/Style';
 import Util from '../common/Util';
 import { IIntroduce } from './IIntroduce';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { getFormattingExperienceTotalDuration } from '../experience/index';
+import experiencePayload from '../../payload/experience';
 
 type Payload = IIntroduce.Payload;
 
@@ -26,6 +28,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
     DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
   );
 
+  // experience에서 총 경력 계산
+  const totalExperience = getFormattingExperienceTotalDuration(experiencePayload).replace('총 ', '');
+
   return (
     <div className="mt-5">
       <Row>
@@ -34,7 +39,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content) => (
-            <p key={content}>{content}</p>
+            <p key={content}>{content.replace('{총경력}', totalExperience)}</p>
           ))}
           <p className="text-right">
             <small>Latest Updated</small>{' '}
