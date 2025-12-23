@@ -35,11 +35,10 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '딜잇',
+      title: '코보티스',
       positions: [
         {
-          // Co-Founder → Lead 역할 중심, Founding Member는 보조표기(리스크 최소화)
-          title: 'Lead Backend Engineer (Founding Member)',
+          title: 'Backend Engineer',
           startedAt: '2024-01',
           endedAt: '2025-06',
           descriptions: [
