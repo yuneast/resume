@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: '공부선배',
+      title: '(주)공부선배',
       positions: [
         {
           title: '학원 운영관리 서비스 / 백엔드 개발자',
@@ -34,7 +34,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '코보티스',
+      title: '(주)코보티스',
       positions: [
         {
           title: '핫딜 알림 서비스 / 백엔드 개발자',
@@ -107,7 +107,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '유토빌',
+      title: '(주)유토빌',
       positions: [
         {
           title: '공동주택 관리 서비스 / 백엔드 개발자',
