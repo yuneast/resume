@@ -96,6 +96,7 @@ export default function ExperienceRow({
               {position.descriptions.map((description) => (
                 <li key={description}>{description}</li>
               ))}
+              {createAchievements(position.achievements)}
               {createSkillKeywords(position.skillKeywords)}
             </ul>
           </Col>
@@ -128,6 +129,22 @@ function createOverallWorkingPeriod(positions: PositionWithDates[]) {
   }
 
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;
+}
+
+function createAchievements(achievements?: string[]) {
+  if (!achievements) {
+    return null;
+  }
+  return (
+    <li>
+      <strong>성과</strong>
+      <ul className="pt-1">
+        {achievements.map((achievement) => (
+          <li key={achievement}>{achievement}</li>
+        ))}
+      </ul>
+    </li>
+  );
 }
 
 function createSkillKeywords(skillKeywords?: string[]) {

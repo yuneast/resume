@@ -53,6 +53,14 @@ export declare namespace IExperience {
 
     descriptions: string[];
     /**
+     * ### (직장)경험 성과
+     *
+     * @description 하나의 `string` 요소가 `<ul>` 태그 안의 `<li>` 가 된다.
+     * @description undefined 가 아닐 경우 해당 경험 하단에 **성과** 목록이 추가된다.
+     */
+
+    achievements?: string[];
+    /**
      * ### (직장)경험의 키워드
      *
      * @description undefined 가 아닐 경우 해당 경험 하단에 **Skill Keywords** 목록이 추가된다.
