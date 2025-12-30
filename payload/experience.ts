@@ -101,7 +101,7 @@ const experience: IExperience.Payload = {
             '위치 기반 알림 최적화를 통해 불필요한 알림 발송을 줄이고 기사 배차 수락률 향상',
             '운영 업무 스케줄러 자동화로 기존 수작업 공수의 70% 이상 절감',
           ],
-          skillKeywords: ['Python', 'FastAPI', 'SQLAlchemy', 'MySQL', 'Redis', 'Celery', 'FCM'],
+          skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis'],
         },
       ],
     },
