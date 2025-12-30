@@ -140,7 +140,7 @@ const experience: IExperience.Payload = {
             '백엔드 단독 개발로 MVP 출시 후 가입자 3,000명 규모까지 안정적 서비스 운영',
             '쿼리 최적화 및 캐싱 적용을 통해 트래픽 급증 시에도 안정적인 응답 속도 유지',
           ],
-          skillKeywords: ['Python', 'Django', 'MySQL', 'Crawling', 'System Optimization'],
+          skillKeywords: ['Python', 'Django', 'MySQL', 'Crawling'],
         },
       ],
     },
