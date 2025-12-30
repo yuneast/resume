@@ -12,7 +12,7 @@ const experience: IExperience.Payload = {
           startedAt: '2025-08',
           descriptions: [
             'PHP 레거시 모놀리식 아키텍처를 Service–Repository 구조로 리팩토링하여 유지보수성 향상',
-            'Kotlin(Spring Boot) 기반 인증 서버 분리 및 PHP 시스템과의 하이브리드 인증 연동 구조 설계',
+            'Java(Spring Boot) 기반 인증 서버 분리 및 PHP 시스템과의 하이브리드 인증 연동 구조 설계',
             '전체 쿼리에 Prepared Statement 적용 및 데이터 조회 구조 개선으로 보안성 및 성능 최적화',
             '안정적인 서비스 운영을 위한 크론 서버 헬스체크 및 실시간 장애 감지 파이프라인 구축',
             'WebSocket 기반 CID(발신번호 표시) 연동 기능을 통한 실시간 상담 업무 환경 구현',
@@ -25,7 +25,7 @@ const experience: IExperience.Payload = {
             'LLM 기반 자동 분석 파이프라인 도입을 통한 코드 리뷰 및 이슈 추적 효율성 극대화',
           ],
           skillKeywords: [
-            'Kotlin',
+            'Java',
             'Spring Boot',
             'JPA',
             'QueryDSL',
@@ -34,7 +34,6 @@ const experience: IExperience.Payload = {
             'Redis',
             'Docker',
             'AWS CloudWatch',
-            'LLM(Log Analysis)',
           ],
         },
       ],
@@ -57,13 +56,13 @@ const experience: IExperience.Payload = {
             '데이터 집계 구조 최적화를 통해 DB 쓰기 트래픽 및 스토리지 사용량 유의미하게 절감',
           ],
           skillKeywords: [
-            'Kotlin',
+            'Java',
             'Spring Boot',
             'JPA',
+            'QueryDSL',
             'PostgreSQL',
             'Redis',
             'Docker',
-            'GitHub Actions',
           ],
         },
         {
