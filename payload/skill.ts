@@ -3,7 +3,7 @@ import { ISkill } from '../component/skill/ISkill';
 const coreBackend: ISkill.Skill = {
   category: 'Core Backend',
   items: [
-    { title: 'Python, Kotlin, Java' },
+    { title: 'Python, Java' },
     { title: 'FastAPI, Spring Boot' },
     { title: 'PostgreSQL, MySQL' },
     { title: 'Redis' },
