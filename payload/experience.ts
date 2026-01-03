@@ -10,6 +10,7 @@ const experience: IExperience.Payload = {
         {
           title: '학원 운영관리 서비스 / 백엔드 개발자',
           startedAt: '2025-08',
+          endedAt: '2025-12',
           descriptions: [
             'PHP 레거시 모놀리식 아키텍처를 Service–Repository 구조로 리팩토링하여 유지보수성 향상',
             'Java(Spring Boot) 기반 인증 서버 분리 및 PHP 시스템과의 하이브리드 인증 연동 구조 설계',
