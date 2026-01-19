@@ -12,7 +12,7 @@ const etc: IEtc.Payload = {
     {
       title: "TESAT 3급",
       subTitle: '경제·경영 및 시사 이해력을 평가하는 종합 능력 시험',
-      startedAt: '2025-12',
+      startedAt: '2026-01',
     },
     // {
     //   title: "정보처리산업기사",
