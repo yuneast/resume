@@ -149,22 +149,6 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: '부동산 전월세 신고 자동화 서비스',
-          startedAt: '2023-04',
-          endedAt: '2023-05',
-          descriptions: [
-            'Python 기반 AI CAPTCHA 해석 파이프라인을 설계하여 부동산 전월세 신고 자동화 시스템 구축',
-            '이미지 전처리·모델 추론·결과 검증 단계를 분리한 안정적인 자동 신고 플로우 구현',
-            '반복적인 수작업 신고 프로세스를 자동화하여 운영 효율성 향상',
-          ],
-          achievements: [
-            '수작업 중심의 전월세 신고 프로세스를 자동화하여 처리 시간 대폭 단축',
-            'CAPTCHA 실패·오탐에 대비한 재시도 및 검증 로직으로 안정적인 운영 환경 확보',
-          ],
-          skillKeywords: ['Python', 'OCR', 'TensorFlow'],
-        },
-        
-        {
           title: '가상화폐 선물 거래소',
           startedAt: '2024-01',
           endedAt: '2024-12',
@@ -179,9 +163,24 @@ const experience: IExperience.Payload = {
           skillKeywords: ['PHP', 'Laravel', 'MySQL', 'Next.js', 'Redis', 'WebSocket'],
         },
         {
-          title: 'Polygon 네트워크 DeFi Farm / 프론트엔드·블록체인 개발자',
+          title: '부동산 전월세 신고 자동화 서비스',
+          startedAt: '2023-04',
+          endedAt: '2023-05',
+          descriptions: [
+            'Python 기반 AI CAPTCHA 해석 파이프라인을 설계하여 부동산 전월세 신고 자동화 시스템 구축',
+            '이미지 전처리·모델 추론·결과 검증 단계를 분리한 안정적인 자동 신고 플로우 구현',
+            '반복적인 수작업 신고 프로세스를 자동화하여 운영 효율성 향상',
+          ],
+          achievements: [
+            '수작업 중심의 전월세 신고 프로세스를 자동화하여 처리 시간 대폭 단축',
+            'CAPTCHA 실패·오탐에 대비한 재시도 및 검증 로직으로 안정적인 운영 환경 확보',
+          ],
+          skillKeywords: ['Python', 'OCR', 'TensorFlow'],
+        },
+        {
+          title: 'Polygon 네트워크 DeFi Farm',
           startedAt: '2023-01',
-          endedAt: '2023-02',
+          endedAt: '2023-03',
           descriptions: [
             'Next.js 및 Solidity를 활용한 Polygon 네트워크 기반 DeFi Farm 서비스 구축',
             '스테이킹 및 보상 분배 스마트 컨트랙트 설계·구현',
