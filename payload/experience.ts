@@ -145,29 +145,96 @@ const experience: IExperience.Payload = {
         },
       ],
     },
-    // {
-    //   title: '프리랜서',
-    //   positions: [
-    //     {
-    //       title: '다수 외부 프로젝트에서 백엔드 설계·개발·운영 전반 담당',
-    //       startedAt: '2021-01',
-    //       descriptions: [
-    //         '외부 프로젝트에서 백엔드 설계·구현·운영을 담당하며 납기·품질·운영 안정성을 책임',
-    //         '부동산 전월세 신고 자동화 시스템 설계 및 구축',
-    //         '가상화폐 거래소 오더북 엔진 및 매수·매도 체결 로직 구현',
-    //         '온라인 강의 플랫폼 영상 스트리밍 연동 및 결제 기능 개발',
-    //         '신차 장기렌트카 견적 비교 알고리즘 설계 및 구현',
-    //       ],
-    //       skillKeywords: [
-    //         'Python',
-    //         'PHP',
-    //         'JavaScript',
-    //         'MySQL',
-    //         'PostgreSQL',
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      title: '뉴소프트',
+      positions: [
+        {
+          title: '부동산 전월세 신고 자동화 서비스',
+          startedAt: '2023-04',
+          endedAt: '2023-05',
+          descriptions: [
+            'Python 기반 AI CAPTCHA 해석 파이프라인을 설계하여 부동산 전월세 신고 자동화 시스템 구축',
+            '이미지 전처리·모델 추론·결과 검증 단계를 분리한 안정적인 자동 신고 플로우 구현',
+            '반복적인 수작업 신고 프로세스를 자동화하여 운영 효율성 향상',
+          ],
+          achievements: [
+            '수작업 중심의 전월세 신고 프로세스를 자동화하여 처리 시간 대폭 단축',
+            'CAPTCHA 실패·오탐에 대비한 재시도 및 검증 로직으로 안정적인 운영 환경 확보',
+          ],
+          skillKeywords: ['Python', 'OCR', 'TensorFlow'],
+        },
+        
+        {
+          title: '가상화폐 선물 거래소 / 풀스택 개발자',
+          startedAt: '2024-01',
+          endedAt: '2024-12',
+          descriptions: [
+            'PHP Laravel 기반 가상화폐 선물 거래소 백엔드 시스템 설계 및 구현',
+            '주문·체결·포지션 관리 등 거래 핵심 도메인 로직 개발',
+            '거래 안정성을 고려한 주문 상태 관리 및 예외 처리 로직 구현',
+          ],
+          achievements: [
+            '주문·체결 로직 분리를 통해 거래 처리 안정성 및 유지보수성 확보',
+          ],
+          skillKeywords: ['PHP', 'Laravel', 'MySQL', 'Next.js', 'Redis', 'WebSocket'],
+        },
+        {
+          title: 'Polygon 네트워크 DeFi Farm / 프론트엔드·블록체인 개발자',
+          startedAt: '2023-01',
+          endedAt: '2023-02',
+          descriptions: [
+            'Next.js 및 Solidity를 활용한 Polygon 네트워크 기반 DeFi Farm 서비스 구축',
+            '스테이킹 및 보상 분배 스마트 컨트랙트 설계·구현',
+            '프론트엔드와 스마트 컨트랙트 간 트랜잭션 연동',
+          ],
+          achievements: [
+            '스마트 컨트랙트 기반 자산 관리 로직 구현 경험 확보',
+          ],
+          skillKeywords: ['Next.js', 'Solidity', 'Polygon', 'Web3'],
+        },
+        {
+          title: '마케팅 자동화 도구',
+          startedAt: '2018-02',
+          endedAt: '2019-06',
+          descriptions: [
+            'C# 기반 네이버 밴드 자동 글쓰기 프로그램 개발로 반복 게시 작업 자동화',
+            'C# 기반 페이스북 자동 글쓰기 매크로 개발',
+            'C# 기반 카카오톡 자동 메시지 발송 프로그램 개발',
+          ],
+          achievements: [
+            '반복적인 마케팅 업무 자동화로 운영 공수 대폭 절감',
+          ],
+          skillKeywords: ['C#', '.NET', 'Selenium'],
+        },
+        {
+          title: '온라인 강의 플랫폼 / 풀스택 개발자',
+          startedAt: '2017-08',
+          endedAt: '2017-12',
+          descriptions: [
+            'GNUBoard 기반 온라인 강의 플랫폼 구축 및 커스터마이징',
+            '영상 스트리밍 서비스 및 결제 모듈 연동 기능 개발',
+          ],
+          achievements: [
+            '강의 등록·결제·수강 흐름을 일관된 구조로 정리하여 운영 편의성 향상',
+          ],
+          skillKeywords: ['PHP', 'GNUBoard', 'PG'],
+        },
+        {
+          title: '신차 장기렌트카 견적 비교 플랫폼',
+          startedAt: '2017-01',
+          endedAt: '2017-06',
+          descriptions: [
+            'React 기반 장기렌트카 견적 비교 웹 서비스 백엔드 및 견적 산출 로직 설계·구현',
+            '다수 렌트사 조건을 비교·정규화하는 견적 계산 알고리즘 개발',
+            '외부 데이터 연동을 고려한 확장 가능한 API 구조 설계',
+          ],
+          achievements: [
+            '복잡한 견적 조건을 일관된 구조로 표준화하여 신규 렌트사 연동 비용 감소',
+          ],
+          skillKeywords: ['React', 'Node.js', 'TypeScript'],
+        },
+      ],
+    },
   ],
 };
 
