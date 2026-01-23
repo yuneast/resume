@@ -165,7 +165,7 @@ const experience: IExperience.Payload = {
         },
         
         {
-          title: '가상화폐 선물 거래소 / 풀스택 개발자',
+          title: '가상화폐 선물 거래소',
           startedAt: '2024-01',
           endedAt: '2024-12',
           descriptions: [
@@ -207,7 +207,7 @@ const experience: IExperience.Payload = {
           skillKeywords: ['C#', '.NET', 'Selenium'],
         },
         {
-          title: '온라인 강의 플랫폼 / 풀스택 개발자',
+          title: '온라인 강의 플랫폼',
           startedAt: '2017-08',
           endedAt: '2017-12',
           descriptions: [
