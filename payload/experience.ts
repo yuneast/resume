@@ -149,23 +149,9 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: '가상화폐 선물 거래소',
-          startedAt: '2024-01',
-          endedAt: '2024-12',
-          descriptions: [
-            'PHP Laravel 기반 가상화폐 선물 거래소 백엔드 시스템 설계 및 구현',
-            '주문·체결·포지션 관리 등 거래 핵심 도메인 로직 개발',
-            '거래 안정성을 고려한 주문 상태 관리 및 예외 처리 로직 구현',
-          ],
-          achievements: [
-            '주문·체결 로직 분리를 통해 거래 처리 안정성 및 유지보수성 확보',
-          ],
-          skillKeywords: ['PHP', 'Laravel', 'MySQL', 'Next.js', 'Redis', 'WebSocket'],
-        },
-        {
           title: '부동산 전월세 신고 자동화 서비스',
-          startedAt: '2023-04',
-          endedAt: '2023-05',
+          startedAt: '2021-05',
+          endedAt: '2021-08',
           descriptions: [
             'Python 기반 AI CAPTCHA 해석 파이프라인을 설계하여 부동산 전월세 신고 자동화 시스템 구축',
             '이미지 전처리·모델 추론·결과 검증 단계를 분리한 안정적인 자동 신고 플로우 구현',
@@ -179,8 +165,8 @@ const experience: IExperience.Payload = {
         },
         {
           title: 'Polygon 네트워크 DeFi Farm',
-          startedAt: '2023-01',
-          endedAt: '2023-03',
+          startedAt: '2021-01',
+          endedAt: '2021-03',
           descriptions: [
             'Next.js 및 Solidity를 활용한 Polygon 네트워크 기반 DeFi Farm 서비스 구축',
             '스테이킹 및 보상 분배 스마트 컨트랙트 설계·구현',
