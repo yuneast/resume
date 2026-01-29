@@ -21,8 +21,10 @@ COPY package.json package-lock.json /var/nextjs/
 RUN npm install --omit=dev
 
 COPY --from=builder /var/nextjs/.next /var/nextjs/.next
-COPY --from=builder /var/nextjs/public /var/nextjs/public
+
+ENV NODE_OPTIONS=--openssl-legacy-provider
+ENV NODE_ENV=production
 
 EXPOSE 5000
 
-CMD ["npx", "cross-env", "NODE_OPTIONS=--openssl-legacy-provider", "next", "start", "-p", "5000"]
+CMD ["npx", "next", "start", "-p", "5000"]
