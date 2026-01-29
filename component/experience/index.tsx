@@ -1,5 +1,5 @@
 import { Badge, Col, Row } from 'reactstrap';
-import { DateTime, Duration } from 'luxon';
+import { DateTime } from 'luxon';
 
 import { PropsWithChildren } from 'react';
 import { EmptyRowCol } from '../common';
@@ -49,8 +49,8 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
 }
 
 export function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
-  // 모든 position의 시작/종료 날짜를 수집
-  const periods: { start: DateTime; end: DateTime }[] = [];
+  let minStart: DateTime | null = null;
+  let maxEnd: DateTime | null = null;
 
   payload.list.forEach((item: IExperience.Item) => {
     item.positions.forEach((position: IExperience.Position) => {
@@ -58,38 +58,13 @@ export function getFormattingExperienceTotalDuration(payload: IExperience.Payloa
       const endedAt = position.endedAt
         ? DateTime.fromFormat(position.endedAt, Util.LUXON_DATE_FORMAT.YYYY_LL)
         : DateTime.local();
-      periods.push({ start: startedAt, end: endedAt });
+
+      if (!minStart || startedAt < minStart) minStart = startedAt;
+      if (!maxEnd || endedAt > maxEnd) maxEnd = endedAt;
     });
   });
 
-  // 시작일 기준으로 정렬
-  periods.sort((a, b) => a.start.toMillis() - b.start.toMillis());
+  if (!minStart || !maxEnd) return '';
 
-  // 겹치는 기간 병합
-  const mergedPeriods: { start: DateTime; end: DateTime }[] = [];
-
-  periods.forEach((period) => {
-    if (mergedPeriods.length === 0) {
-      mergedPeriods.push(period);
-    } else {
-      const lastMerged = mergedPeriods[mergedPeriods.length - 1];
-
-      // 현재 기간이 마지막 병합된 기간과 겹치거나 인접한 경우
-      if (period.start <= lastMerged.end) {
-        // 종료일을 더 늦은 날짜로 확장
-        lastMerged.end = period.end > lastMerged.end ? period.end : lastMerged.end;
-      } else {
-        // 겹치지 않는 새로운 기간
-        mergedPeriods.push(period);
-      }
-    }
-  });
-
-  // 병합된 기간들의 duration 합산
-  const totalExperience = mergedPeriods.reduce((total: Duration, period) => {
-    const duration = period.end.diff(period.start);
-    return total.plus(duration);
-  }, Duration.fromMillis(0));
-
-  return totalExperience.toFormat(`총 ${Util.LUXON_DATE_FORMAT.DURATION_KINDNESS}`);
+  return `총 ${Util.getFormattingDuration(minStart, maxEnd)}`;
 }
