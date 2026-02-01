@@ -9,4 +9,3 @@ services:
     environment:
       - NODE_ENV=production
     restart: unless-stopped
-    command: npm start
