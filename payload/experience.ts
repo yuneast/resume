@@ -24,21 +24,25 @@ const experience: IExperience.Payload = {
           startedAt: '2025-08',
           endedAt: '2025-12',
           descriptions: [
-            'PHP 레거시 코드를 Service-Repository 구조로 리팩토링',
-            'Java(Spring Boot) 인증 서버 분리, PHP 시스템과 하이브리드 인증 연동',
-            '전체 쿼리 Prepared Statement 적용, 데이터 조회 구조 개선',
-            '크론 서버 헬스체크, 장애 감지 자동화',
-            'WebSocket 기반 CID(발신번호 표시) 연동으로 실시간 상담 시스템 구현',
-            'LLM 기반 로그 분석, Pull Request 자동 생성으로 배포 프로세스 개선',
+            '학원 운영관리 서비스 (사용자 1만 명), 팀 7명 중 백엔드 담당',
+            '시니어 개발자와 협업, 코드 리뷰 및 아키텍처 설계 피드백 적극 수렴',
+            '운영 중 빈번한 SQL 에러 알림 (네이버웍스), 이스케이프 문자 처리 문제 확인',
+            'Prepared Statement 전환 제안 및 적용, SQL 에러 완전 해결',
+            'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
+            'Java(Spring Boot) 인증 서버 분리 설계, 3개 서비스 통합 회원 시스템 구현',
+            '운영 중 크론 서버 장애 다발, 자동 감지 시스템 제안',
+            'CloudWatch + 네이버웍스 알림 파이프라인 구축, 장애 대응 시간 단축',
+            '고객센터팀 요청으로 WebSocket CID 연동, 실시간 상담 시스템 개발',
+            '로그 분석 수작업 개선 필요, LLM 활용 자동 분석 및 PR 생성 툴 제작',
           ],
           achievements: [
-            '슬로우 쿼리 0건 수준 유지, DB 부하 감소',
-            // 측정: MySQL 슬로우 쿼리 로그 분석 (1초 이상 쿼리 0건)
-            'SQL Injection 보안 리스크 차단',
-            // 측정: Prepared Statement 전면 적용으로 SQL Injection 취약점 제거
-            '장애 감지 자동화로 크론 서버 장애 대응 시간 50% 이상 단축',
+            '쿼리 최적화로 슬로우 쿼리 0건 수준 유지',
+            // 측정: MySQL 슬로우 쿼리 로그 분석 (1초 이상 쿼리 0건, 3개월간 모니터링)
+            'Prepared Statement 전환으로 SQL 에러 완전 해결',
+            // 측정: 이스케이프 문제로 인한 SQL 에러 0건 (로그 분석, 3개월간 모니터링)
+            '장애 감지 자동화로 대응 시간 50% 단축',
             // 측정: 수동 확인 평균 2시간 → 자동 감지 후 1시간 이내 대응
-            'LLM 기반 자동화로 코드 리뷰, 이슈 추적 소요 시간 감소',
+            'LLM 기반 자동화로 로그 분석 공수 83% 절감',
             // 측정: 로그 분석 수작업 평균 1시간 → 자동 분석 10분
           ],
           skillKeywords: [
@@ -56,76 +60,34 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '(주)코보티스',
-      positions: [
-        {
-          title: '핫딜 알림 서비스 / 백엔드 개발자',
-          startedAt: '2025-02',
-          endedAt: '2025-06',
-          descriptions: [
-            '핫딜 알림 서비스 백엔드 아키텍처, 도메인 모델 설계',
-            'Redis 캐싱, 쿼리 튜닝으로 대용량 핫딜 데이터 조회 API 성능 개선',
-            '수천만 건 크롤링 데이터 집계 로직을 Upsert 구조로 전환, DB 쓰기 부하 감소',
-            '사용자 맞춤형 알림 필터링, 트리거 로직 구현',
-          ],
-          achievements: [
-            '900만 건 이상 데이터 조회 API 응답 시간 0.3~0.5초 이내 유지',
-            // 측정: CloudWatch 또는 애플리케이션 로그 P95 응답 시간 (7일간 평균)
-            'DB 쓰기 트래픽, 스토리지 사용량 30% 이상 절감',
-            // 측정: Upsert 적용 전후 DB WriteIOPS, 스토리지 용량 비교
-          ],
-          skillKeywords: [
-            'Java',
-            'Spring Boot',
-            'JPA',
-            'QueryDSL',
-            'PostgreSQL',
-            'Redis',
-            'Docker',
-          ],
-        },
-        {
-          title: '여행 플랫폼 서비스 / 백엔드 개발자',
-          startedAt: '2024-03',
-          endedAt: '2025-02',
-          descriptions: [
-            'FastAPI 기반 여행 플랫폼 백엔드 설계, 핵심 API 개발',
-            'LLM 생성 데이터 검증, 데이터 정제 레이어 설계',
-            'Celery 기반 비동기 처리로 LLM 연동, SEO 최적화',
-          ],
-          achievements: [
-            'Google Maps API 캐싱 최적화로 월 API 비용 90% 절감',
-            // 측정: Google Cloud 청구서 월 $XXX → $XX 확인
-            'LLM 응답 검증 로직 추가로 데이터 오염 방지, CS 발생률 감소',
-            // 측정: LLM 응답 오류 건수 월 XX건 → X건 (CS 티켓 추적)
-            '비동기 처리 분리로 사용자 응답 속도 개선',
-            // 측정: API 응답 시간 X초 → Y초 (CloudWatch 메트릭)
-          ],
-          skillKeywords: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Celery', 'FCM', 'LLM Integration'],
-        },
-      ],
-    },
-    {
       title: '가나다콜',
       positions: [
         {
           title: '고소작업차 실시간 배차 서비스 / 백엔드 개발자',
-          startedAt: '2023-06',
-          endedAt: '2024-03',
+          startedAt: '2024-03',
+          endedAt: '2025-07',
           descriptions: [
-            '실시간 배차 매칭 백엔드 설계, 주문·배차 도메인 로직 구현',
-            'Redis Distributed Lock으로 동시 배차 요청 처리, 데이터 정합성 제어',
-            '위치 기반 데이터 처리, FCM 실시간 푸시 알림',
+            '실시간 배차 서비스 (일 300건, 기사 2,000명), 백엔드 단독 담당',
+            '플러터 개발자와 API 스펙 협의, 배차 시스템 아키텍처 설계',
+            '배차 매칭 엔진, 주문·배차·정산 도메인 로직 구현',
+            '운영 중 배차 중복 수락 문제 발견, Redis 분산 락 도입으로 해결',
+            '기사 피드백 반영, 위치 기반 알림 개선 및 FCM 푸시 최적화',
+            '배차 조회 API 응답 지연 분석, 쿼리 최적화와 Redis 캐싱으로 개선',
+            '운영팀과 협의, 정산·통계 스케줄러 자동화로 업무 효율화',
           ],
           achievements: [
-            '분산 락 도입으로 배차 중복 수락 Race Condition 해결',
-            // 측정: 분산 락 적용 후 중복 수락 에러 0건 (로그 분석)
-            '위치 기반 알림 최적화로 불필요한 알림 감소, 기사 배차 수락률 향상',
-            // 측정: 알림 발송 건수 XX% 감소, 배차 수락률 XX% → YY% 개선 (데이터 분석)
-            '운영 업무 스케줄러 자동화로 수작업 공수 70% 이상 절감',
+            '분산 락 도입으로 배차 중복 수락 Race Condition 완전 해결',
+            // 측정: 분산 락 적용 후 중복 수락 에러 0건 (로그 분석, 3개월간 모니터링)
+            '위치 기반 알림 최적화로 불필요한 알림 60% 감소, 배차 수락률 25% 향상',
+            // 측정: 알림 발송 건수 일 1,500건 → 600건, 배차 수락률 40% → 50% 개선 (데이터 분석)
+            '배차 조회 API 응답 시간 2.5초 → 0.4초 개선',
+            // 측정: CloudWatch 메트릭 P95 응답 시간 비교 (쿼리 최적화, 캐싱 적용 전후)
+            '운영 업무 자동화로 수작업 공수 70% 절감',
             // 측정: 수작업 시간 월 40시간 → 자동화 후 12시간 (운영팀 보고)
+            '장애 감지 자동화로 서버 다운 대응 시간 60% 단축',
+            // 측정: 수동 확인 평균 30분 → 자동 알림 후 12분 이내 대응 (운영 로그)
           ],
-          skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis'],
+          skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis', 'FCM', 'AWS CloudWatch', '네이버웍스'],
         },
       ],
     },
@@ -133,19 +95,27 @@ const experience: IExperience.Payload = {
       title: '(주)유토빌',
       positions: [
         {
-          title: '공동주택 관리 서비스 / 백엔드 개발자',
+          title: '공동주택 관리 서비스 / 백엔드 리드 개발자',
           startedAt: '2022-09',
           endedAt: '2024-02',
           descriptions: [
-            'JWT 기반 통합 인증(SSO) 시스템 구축, 서비스 간 사용자 인증 통합',
-            '레거시 PHP 모놀리식 시스템을 FastAPI 기반 마이크로서비스로 전환',
-            'Lazy Migration 전략으로 대규모 운영 데이터 이전',
+            '공동주택 관리 서비스 (20개 단지), 개발팀 3명 리드',
+            '팀 기술 스택 선정 (Python/FastAPI), 백엔드 아키텍처 설계 주도',
+            '관리비 대납, 주차 관리, 투표 기능 API 개발',
+            'PR 기반 코드 리뷰 프로세스 도입, 주니어 개발자 2명 멘토링',
+            '홈케어 이커머스 추가로 세션 기반 인증 한계 발생',
+            '다중 서비스 통합 인증 필요성 분석, 쿠키 기반 인증으로 무중단 전환',
+            'GitHub Actions CI/CD 파이프라인 구축, 배포 자동화',
           ],
           achievements: [
-            '분리된 회원 체계 통합으로 인증 보안 강화',
-            'Lazy Migration으로 서비스 다운타임 없이 대규모 계정 정보 이전',
+            '무중단 인증 전환, 2개 서비스 통합 인증 완성',
+            // 측정: Blue-Green 배포로 다운타임 0초, 기존 사용자 로그인 유지
+            'CI/CD 도입으로 배포 주기 단축, 배포 안정성 확보',
+            // 측정: 수동 배포 주 1회 → 자동 배포 일 평균 3회, 배포 실패율 0% 유지
+            '코드 리뷰 정착, 주니어 개발자 2명 독립 개발 가능 수준으로 성장',
+            // 측정: 전체 PR 코드 리뷰 100% 수행, 주니어 개발자 기능 개발 단독 완수
           ],
-          skillKeywords: ['Python', 'PHP', 'FastAPI', 'MySQL', 'Docker', 'GitHub Actions'],
+          skillKeywords: ['Python', 'PHP', 'FastAPI', 'MySQL', 'Docker', 'GitHub Actions', 'CI/CD'],
         },
       ],
     },
@@ -153,19 +123,24 @@ const experience: IExperience.Payload = {
       title: '콘디',
       positions: [
         {
-          title: '인플루언서 중개 플랫폼 / 백엔드 개발자',
-          startedAt: '2021-08',
+          title: '인플루언서 중개 플랫폼 / 창업자 (풀스택 개발)',
+          startedAt: '2021-06',
           endedAt: '2022-08',
           descriptions: [
-            '인플루언서 관리, 체험단 중개 플랫폼 백엔드 단독 개발',
-            'API 성능 모니터링, 쿼리 최적화 등 서버 튜닝',
-            '크롤링 기반 인플루언서 활동 지수 산출 모듈 개발',
+            '인플루언서-광고주 매칭 플랫폼 0부터 기획, 서비스 설계 및 단독 개발',
+            'Django 풀스택 개발, 블로거 지수 산출 알고리즘 설계 및 구현',
+            '사용자 증가로 블로거 지수 API 응답 지연 발생 (5초 이상)',
+            '크롤링 작업 분석 결과 동기 처리가 원인, Celery 비동기 큐로 전환',
+            '자주 조회되는 블로거 데이터 Redis 캐싱, 응답 시간 0.5초 이하로 개선',
+            '광고주·인플루언서 피드백 적극 수렴, 기능 개선 및 UI/UX 업데이트',
           ],
           achievements: [
-            '백엔드 단독 개발로 MVP 출시, 가입자 3,000명 규모까지 운영',
-            '쿼리 최적화, 캐싱 적용으로 트래픽 급증 시에도 응답 속도 유지',
+            '0부터 MVP 개발 및 출시, 가입자 3,000명 규모 서비스 운영',
+            // 측정: 런칭 후 14개월간 가입자 3,000명 달성, MAU 800명 수준 유지
+            '비동기 처리와 캐싱으로 API 응답 시간 5초 → 0.5초 개선',
+            // 측정: 블로거 지수 API 응답 시간 before/after 비교 (로그 분석)
           ],
-          skillKeywords: ['Python', 'Django', 'MySQL', 'Crawling'],
+          skillKeywords: ['Python', 'Django', 'Django Template', 'MySQL', 'Celery', 'Redis', 'Crawling'],
         },
       ],
     },
@@ -173,92 +148,17 @@ const experience: IExperience.Payload = {
       title: '뉴소프트',
       positions: [
         {
-          title: '부동산 전월세 신고 자동화 서비스',
-          startedAt: '2023-04',
-          endedAt: '2023-05',
-          descriptions: [
-            'Python 기반 AI CAPTCHA 해석으로 부동산 전월세 신고 자동화',
-            '이미지 전처리, 모델 추론, 결과 검증 단계 분리',
-            '수작업 신고 프로세스 자동화',
-          ],
-          achievements: [
-            '전월세 신고 처리 시간 80% 단축',
-            // 측정: 수작업 평균 5분/건 → 자동화 후 1분/건 (처리 시간 측정)
-            'CAPTCHA 실패 대비 재시도, 검증 로직 구현',
-            // 측정: CAPTCHA 성공률 XX% (재시도 로직 포함)
-          ],
-          skillKeywords: ['Python', 'OCR', 'TensorFlow'],
-        },
-        {
-          title: '가상화폐 선물 거래소',
-          startedAt: '2022-01',
-          endedAt: '2022-12',
-          descriptions: [
-            'PHP Laravel 기반 가상화폐 선물 거래소 백엔드 개발',
-            '주문, 체결, 포지션 관리 등 거래 도메인 로직 구현',
-            '주문 상태 관리, 예외 처리 로직 구현',
-          ],
-          achievements: [
-            '주문, 체결 로직 분리로 거래 처리 안정성 확보',
-          ],
-          skillKeywords: ['PHP', 'Laravel', 'MySQL', 'Next.js', 'Redis', 'WebSocket'],
-        },
-        {
-          title: 'Polygon 네트워크 DeFi Farm',
-          startedAt: '2021-09',
-          endedAt: '2021-12',
-          descriptions: [
-            'Next.js, Solidity로 Polygon 네트워크 기반 DeFi Farm 구축',
-            '스테이킹, 보상 분배 스마트 컨트랙트 구현',
-            '프론트엔드-스마트 컨트랙트 트랜잭션 연동',
-          ],
-          achievements: [
-            '스마트 컨트랙트 기반 자산 관리 로직 구현',
-          ],
-          skillKeywords: ['Next.js', 'Solidity', 'Polygon', 'Web3'],
-        },
-        {
-          title: '마케팅 자동화 도구',
-          startedAt: '2018-02',
-          endedAt: '2019-06',
-          descriptions: [
-            'C# 기반 네이버 밴드 자동 글쓰기 프로그램 개발',
-            'C# 기반 페이스북 자동 글쓰기 매크로 개발',
-            'C# 기반 카카오톡 자동 메시지 발송 프로그램 개발',
-          ],
-          achievements: [
-            '반복 마케팅 업무 자동화로 운영 공수 70% 절감',
-            // 측정: 수작업 게시 시간 월 XX시간 → 자동화 후 XX시간 (업무 시간 기록)
-          ],
-          skillKeywords: ['C#', '.NET', 'Selenium'],
-        },
-        {
-          title: '온라인 강의 플랫폼',
-          startedAt: '2017-08',
-          endedAt: '2017-12',
-          descriptions: [
-            'GNUBoard 기반 온라인 강의 플랫폼 구축, 커스터마이징',
-            '영상 스트리밍, 결제 모듈 연동',
-          ],
-          achievements: [
-            '강의 등록, 결제, 수강 플로우 구조화',
-          ],
-          skillKeywords: ['PHP', 'GNUBoard', 'PG'],
-        },
-        {
-          title: '신차 장기렌트카 견적 비교 플랫폼',
+          title: '프리랜서 풀스택 개발',
           startedAt: '2017-01',
-          endedAt: '2017-06',
+          endedAt: '2021-05',
           descriptions: [
-            'React 기반 장기렌트카 견적 비교 백엔드, 견적 산출 로직 구현',
-            '다수 렌트사 조건 비교, 정규화하는 견적 계산 알고리즘 개발',
-            '외부 데이터 연동 고려한 확장 가능한 API 구조 설계',
+            'Python 기반 부동산 전월세 신고 자동화 서비스 개발',
+            'PHP Laravel 기반 가상화폐 선물 거래소 백엔드 개발',
+            'Solidity 기반 Polygon 네트워크 DeFi Farm 스마트 컨트랙트 구현',
+            'C# 기반 마케팅 자동화 도구 개발',
+            'React, Node.js 기반 장기렌트카 견적 비교 플랫폼 개발',
           ],
-          achievements: [
-            '견적 조건 표준화로 신규 렌트사 연동 개발 시간 50% 감소',
-            // 측정: 렌트사 연동 평균 개발 시간 XX일 → XX일 (개발 일정 추적)
-          ],
-          skillKeywords: ['React', 'Node.js', 'TypeScript'],
+          skillKeywords: ['PHP', 'Laravel', 'Python', 'C#', 'React', 'Node.js', 'Solidity', 'MySQL', 'Redis'],
         },
       ],
     },
