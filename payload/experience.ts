@@ -5,6 +5,18 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: '(주)울림',
+      positions: [
+        {
+          title: '백엔드 개발자자',
+          startedAt: '2026-01',
+          descriptions: [
+            '오늘 첫출근',
+          ],
+        },
+      ],
+    },
+    {
       title: '(주)공부선배',
       positions: [
         {
