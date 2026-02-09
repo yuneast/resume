@@ -7,8 +7,8 @@ const backend: ISkill.Skill = {
     { title: 'Spring Boot' },
     { title: 'Python' },
     { title: 'FastAPI' },
-    { title: 'Node.js' },
     { title: 'PHP' },
+    { title: 'Laravel' },
   ],
 };
 
