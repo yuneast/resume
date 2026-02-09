@@ -26,6 +26,7 @@ const experience: IExperience.Payload = {
           descriptions: [
             '학원 운영관리 서비스 (사용자 1만 명), 팀 7명 중 백엔드 담당',
             '시니어 개발자와 협업, 코드 리뷰 및 아키텍처 설계 피드백 적극 수렴',
+            '수도코드 작성, 데일리 미팅에서 개발 계획 발표',
             '운영 중 빈번한 SQL 에러 알림 (네이버웍스), 이스케이프 문자 처리 문제 확인',
             'Prepared Statement 전환 제안 및 적용, SQL 에러 완전 해결',
             'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
