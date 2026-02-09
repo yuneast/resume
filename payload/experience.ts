@@ -30,7 +30,7 @@ const experience: IExperience.Payload = {
             '운영 중 빈번한 SQL 에러 알림 (네이버웍스), 이스케이프 문자 처리 문제 확인',
             'Prepared Statement 전환 제안 및 적용, SQL 에러 완전 해결',
             'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
-            'Java(Spring Boot) 인증 서버 분리 설계, 3개 서비스 통합 회원 시스템 구현',
+            '인증 서버 분리, 3개 서비스 통합 회원 시스템 구현',
             '운영 중 크론 서버 장애 다발, 자동 감지 시스템 제안',
             '로그 분석 수작업 개선 필요, LLM 활용 자동 분석 및 PR 생성 툴 제작',
           ],
