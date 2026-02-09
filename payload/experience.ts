@@ -31,7 +31,7 @@ const experience: IExperience.Payload = {
             'Prepared Statement 전환 제안 및 적용, SQL 에러 완전 해결',
             'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
             '인증 서버 분리, 3개 서비스 통합 회원 시스템 구현',
-            '운영 중 크론 서버 장애 다발, 자동 감지 시스템 제안',
+            '스케줄러 로그 모니터링, 타임아웃 시 네이버웍스 자동 알림',
             '로그 분석 수작업 개선 필요, LLM 활용 자동 분석 및 PR 생성 툴 제작',
           ],
           achievements: [
