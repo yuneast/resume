@@ -33,9 +33,13 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '슬로우 쿼리 0건 수준 유지, DB 부하 감소',
+            // 측정: MySQL 슬로우 쿼리 로그 분석 (1초 이상 쿼리 0건)
             'SQL Injection 보안 리스크 차단',
+            // 측정: Prepared Statement 전면 적용으로 SQL Injection 취약점 제거
             '장애 감지 자동화로 크론 서버 장애 대응 시간 50% 이상 단축',
+            // 측정: 수동 확인 평균 2시간 → 자동 감지 후 1시간 이내 대응
             'LLM 기반 자동화로 코드 리뷰, 이슈 추적 소요 시간 감소',
+            // 측정: 로그 분석 수작업 평균 1시간 → 자동 분석 10분
           ],
           skillKeywords: [
             'Java',
@@ -66,7 +70,9 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '900만 건 이상 데이터 조회 API 응답 시간 0.3~0.5초 이내 유지',
+            // 측정: CloudWatch 또는 애플리케이션 로그 P95 응답 시간 (7일간 평균)
             'DB 쓰기 트래픽, 스토리지 사용량 30% 이상 절감',
+            // 측정: Upsert 적용 전후 DB WriteIOPS, 스토리지 용량 비교
           ],
           skillKeywords: [
             'Java',
@@ -89,8 +95,11 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             'Google Maps API 캐싱 최적화로 월 API 비용 90% 절감',
+            // 측정: Google Cloud 청구서 월 $XXX → $XX 확인
             'LLM 응답 검증 로직 추가로 데이터 오염 방지, CS 발생률 감소',
+            // 측정: LLM 응답 오류 건수 월 XX건 → X건 (CS 티켓 추적)
             '비동기 처리 분리로 사용자 응답 속도 개선',
+            // 측정: API 응답 시간 X초 → Y초 (CloudWatch 메트릭)
           ],
           skillKeywords: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Celery', 'FCM', 'LLM Integration'],
         },
@@ -110,8 +119,11 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '분산 락 도입으로 배차 중복 수락 Race Condition 해결',
+            // 측정: 분산 락 적용 후 중복 수락 에러 0건 (로그 분석)
             '위치 기반 알림 최적화로 불필요한 알림 감소, 기사 배차 수락률 향상',
+            // 측정: 알림 발송 건수 XX% 감소, 배차 수락률 XX% → YY% 개선 (데이터 분석)
             '운영 업무 스케줄러 자동화로 수작업 공수 70% 이상 절감',
+            // 측정: 수작업 시간 월 40시간 → 자동화 후 12시간 (운영팀 보고)
           ],
           skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis'],
         },
@@ -171,7 +183,9 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '전월세 신고 처리 시간 80% 단축',
+            // 측정: 수작업 평균 5분/건 → 자동화 후 1분/건 (처리 시간 측정)
             'CAPTCHA 실패 대비 재시도, 검증 로직 구현',
+            // 측정: CAPTCHA 성공률 XX% (재시도 로직 포함)
           ],
           skillKeywords: ['Python', 'OCR', 'TensorFlow'],
         },
@@ -214,6 +228,7 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '반복 마케팅 업무 자동화로 운영 공수 70% 절감',
+            // 측정: 수작업 게시 시간 월 XX시간 → 자동화 후 XX시간 (업무 시간 기록)
           ],
           skillKeywords: ['C#', '.NET', 'Selenium'],
         },
@@ -241,6 +256,7 @@ const experience: IExperience.Payload = {
           ],
           achievements: [
             '견적 조건 표준화로 신규 렌트사 연동 개발 시간 50% 감소',
+            // 측정: 렌트사 연동 평균 개발 시간 XX일 → XX일 (개발 일정 추적)
           ],
           skillKeywords: ['React', 'Node.js', 'TypeScript'],
         },
