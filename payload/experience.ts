@@ -21,7 +21,7 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '학원 운영관리 서비스 / 백엔드 개발자',
-          startedAt: '2025-08',
+          startedAt: '2024-08',
           endedAt: '2025-12',
           descriptions: [
             '학원 운영관리 서비스 (사용자 1만 명), 팀 7명 중 백엔드 담당',
@@ -62,8 +62,8 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '고소작업차 실시간 배차 서비스 / 백엔드 개발자',
-          startedAt: '2024-03',
-          endedAt: '2025-07',
+          startedAt: '2023-03',
+          endedAt: '2024-07',
           descriptions: [
             '실시간 배차 서비스 (일 300건, 기사 2,000명), 백엔드 단독 담당',
             '플러터 개발자와 API 스펙 협의, 배차 시스템 아키텍처 설계',
@@ -94,8 +94,8 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '공동주택 관리 서비스 / 백엔드 리드 개발자',
-          startedAt: '2022-09',
-          endedAt: '2024-02',
+          startedAt: '2021-09',
+          endedAt: '2023-02',
           descriptions: [
             '공동주택 관리 서비스 (20개 단지), 개발팀 3명 리드',
             '팀 기술 스택 선정 (Python/FastAPI), 백엔드 아키텍처 설계 주도',
@@ -122,8 +122,8 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '인플루언서 중개 플랫폼 / 창업자 (풀스택 개발)',
-          startedAt: '2021-06',
-          endedAt: '2022-08',
+          startedAt: '2020-06',
+          endedAt: '2021-08',
           descriptions: [
             '인플루언서-광고주 매칭 플랫폼 0부터 기획, 서비스 설계 및 단독 개발',
             'Django 풀스택 개발, 블로거 지수 산출 알고리즘 설계 및 구현',
@@ -148,7 +148,7 @@ const experience: IExperience.Payload = {
         {
           title: '프리랜서 풀스택 개발',
           startedAt: '2017-01',
-          endedAt: '2021-05',
+          endedAt: '2020-05',
           descriptions: [
             'Python 기반 부동산 전월세 신고 자동화 서비스 개발',
             'PHP Laravel 기반 가상화폐 선물 거래소 백엔드 개발',
