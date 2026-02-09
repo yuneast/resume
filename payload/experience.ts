@@ -9,7 +9,7 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '백엔드 개발자',
-          startedAt: '2026-01',
+          startedAt: '2026-02',
           descriptions: [
             '오늘 첫출근',
           ],
