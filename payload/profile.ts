@@ -34,7 +34,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '기회 제안은 편하게 연락주세요.',
+    title: '새로운 기회에 열려있습니다.',
     icon: faBell,
   },
 };
