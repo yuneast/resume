@@ -31,8 +31,6 @@ const experience: IExperience.Payload = {
             'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
             'Java(Spring Boot) 인증 서버 분리 설계, 3개 서비스 통합 회원 시스템 구현',
             '운영 중 크론 서버 장애 다발, 자동 감지 시스템 제안',
-            'CloudWatch + 네이버웍스 알림 파이프라인 구축, 장애 대응 시간 단축',
-            '고객센터팀 요청으로 WebSocket CID 연동, 실시간 상담 시스템 개발',
             '로그 분석 수작업 개선 필요, LLM 활용 자동 분석 및 PR 생성 툴 제작',
           ],
           achievements: [
