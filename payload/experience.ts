@@ -35,7 +35,7 @@ const experience: IExperience.Payload = {
           achievements: [
             '쿼리 최적화로 슬로우 쿼리 0건 수준 유지',
             // 측정: MySQL 슬로우 쿼리 로그 분석 (1초 이상 쿼리 0건, 3개월간 모니터링)
-            'Prepared Statement 전환으로 SQL 에러 제거',
+            'Prepared Statement 전환으로 이스케이프 문제로 인한 SQL 에러 제거',
             // 측정: 이스케이프 문제로 인한 SQL 에러 0건 (로그 분석, 3개월간 모니터링)
             '3개 서비스 통합 인증 완성, 짧은 점검(1시간)으로 전환',
             // 측정: 점검 시간 1시간, 기존 사용자 재로그인 없이 3개 서비스 이용 가능
