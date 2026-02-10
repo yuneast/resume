@@ -4,18 +4,18 @@ const experience: IExperience.Payload = {
   disable: false,
   disableTotalPeriod: false,
   list: [
-    {
-      title: '(주)울림',
-      positions: [
-        {
-          title: '백엔드 개발자',
-          startedAt: '2026-02',
-          descriptions: [
-            '오늘 첫출근',
-          ],
-        },
-      ],
-    },
+    // {
+    //   title: '(주)울림',
+    //   positions: [
+    //     {
+    //       title: '백엔드 개발자',
+    //       startedAt: '2026-02',
+    //       descriptions: [
+    //         '오늘 첫출근',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       title: '(주)공부선배',
       positions: [
@@ -24,13 +24,14 @@ const experience: IExperience.Payload = {
           startedAt: '2024-08',
           endedAt: '2025-12',
           descriptions: [
-            '학원 운영관리 서비스 (사용자 1만 명), 팀 7명 중 백엔드 담당',
+            '학원 운영관리 서비스 (사용자 1만 명), 7명 팀에서 인증·알림·대시보드 도메인 담당',
             '시니어 개발자와 협업, 코드 리뷰 및 아키텍처 설계 피드백 적극 수렴',
             '수도코드 작성, 데일리 미팅에서 개발 계획 발표',
             '운영 중 빈번한 SQL 에러 알림 (네이버웍스), 이스케이프 문자 처리 문제 확인',
             'Prepared Statement 전환 제안 및 적용, SQL 에러 완전 해결',
             'PHP 레거시 코드 리팩토링, Service-Repository 패턴 도입',
-            '인증 서버 분리, 3개 서비스 통합 회원 시스템 구현',
+            '홈페이지·학원관리·학생관리 3개 서비스 통합 필요성 분석',
+            '인증 서버 분리, 쿠키 기반 통합 인증으로 짧은 점검 후 전환',
             '스케줄러 로그 모니터링, 타임아웃 시 네이버웍스 자동 알림',
             '로그 분석 수작업 개선 필요, LLM 활용 자동 분석 및 PR 생성 툴 제작',
           ],
@@ -39,6 +40,8 @@ const experience: IExperience.Payload = {
             // 측정: MySQL 슬로우 쿼리 로그 분석 (1초 이상 쿼리 0건, 3개월간 모니터링)
             'Prepared Statement 전환으로 이스케이프 문제로 인한 SQL 에러 완전 해결',
             // 측정: 이스케이프 문제로 인한 SQL 에러 0건 (로그 분석, 3개월간 모니터링)
+            '3개 서비스 통합 인증 완성, 짧은 점검(1시간)으로 전환',
+            // 측정: 점검 시간 1시간, 기존 사용자 재로그인 없이 3개 서비스 이용 가능
             '장애 감지 자동화로 대응 시간 50% 단축',
             // 측정: 수동 확인 평균 2시간 → 자동 감지 후 1시간 이내 대응
             'LLM 기반 자동화로 로그 분석 공수 90% 절감',
@@ -81,7 +84,7 @@ const experience: IExperience.Payload = {
             '배차 조회 API 응답 시간 2.5초 → 0.4초 개선',
             // 측정: CloudWatch 메트릭 P95 응답 시간 비교 (쿼리 최적화, 캐싱 적용 전후)
           ],
-          skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis', 'FCM', 'AWS CloudWatch', '네이버웍스'],
+          skillKeywords: ['Java', 'Spring Boot', 'JPA', 'QueryDSL', 'MySQL', 'Redis', 'FCM', 'AWS CloudWatch'],
         },
       ],
     },
@@ -89,11 +92,11 @@ const experience: IExperience.Payload = {
       title: '(주)유토빌',
       positions: [
         {
-          title: '공동주택 관리 서비스 / 백엔드 리드 개발자',
+          title: '공동주택 관리 서비스 / 백엔드 개발자',
           startedAt: '2021-09',
           endedAt: '2023-02',
           descriptions: [
-            '공동주택 관리 서비스 (20개 단지), 개발팀 3명 리드',
+            '공동주택 관리 서비스 (20개 단지), 개발팀 3명 (백엔드 주니어 1명, 프론트 주니어 1명)',
             '팀 기술 스택 선정 (Python/FastAPI), 백엔드 아키텍처 설계 주도',
             '관리비 대납, 주차 관리, 투표 기능 API 개발',
             'PR 기반 코드 리뷰 프로세스 도입, 주니어 개발자 2명 멘토링',
